@@ -1,0 +1,3 @@
+The task of natural language generation is to convert information from computer databases into readable human language .
+Parsing aims to determine the parse tree ( grammatical analysis ) of a given sentence .
+Information retrieval is concerned with storing , searching and retrieving information .

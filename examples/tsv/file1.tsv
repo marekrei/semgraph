@@ -1,0 +1,1161 @@
+<s>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+xmod	7	17
+dobj	17	23
+conj	23	18
+conj	23	21
+conj	23	24
+ncmod	21	20
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	15
+ncmod	15	14
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+xmod	7	17
+dobj	17	23
+conj	23	18
+conj	23	20
+conj	23	21
+conj	23	24
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	15
+ncmod	15	14
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+xmod	7	17
+dobj	17	23
+conj	23	18
+conj	23	20
+conj	23	21
+conj	23	24
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	15
+ncmod	15	14
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+xmod	7	17
+dobj	17	23
+conj	23	18
+conj	23	21
+conj	23	24
+ncmod	21	20
+ncsubj	7	1
+iobj	7	10
+dobj	7	9
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	15
+ncmod	15	14
+det	9	8
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	23
+conj	23	21
+conj	23	24
+ncmod	21	14
+ncmod	21	15
+ncmod	21	20
+ta	15	17
+dobj	17	18
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	23
+ncmod	23	14
+ncmod	23	15
+ncmod	23	20
+conj	23	21
+conj	23	24
+ta	15	17
+dobj	17	18
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	23
+conj	23	15
+conj	23	18
+conj	23	21
+conj	23	24
+ncmod	21	20
+ncsubj	17	18
+ncmod	18	17
+ncmod	15	14
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	23
+ncmod	23	14
+ncmod	23	15
+conj	23	21
+conj	23	24
+ncmod	21	20
+ta	15	17
+dobj	17	18
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+ncsubj	7	1
+dobj	7	9
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+iobj	12	13
+dobj	13	23
+ncmod	23	14
+conj	23	21
+conj	23	24
+ncmod	21	15
+ncmod	21	20
+ta	15	17
+dobj	17	18
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	Research	NN1
+2	into	II
+3	modern	JJ
+4	statistical	JJ
+5	NLP	NP1
+6	algorithm	NN2
+7	require	VVZ
+8	an	AT1
+9	understanding	NN1
+10	of	IO
+11	a	AT1
+12	number	NN1
+13	of	IO
+14	disparate	JJ
+15	field	NNL2
+16	,	,
+17	include	VVG
+18	linguistics	NN1
+19	,	,
+20	computer	NN1
+21	science	NN1
+22	,	,
+23	and	CC
+24	statistics	NN
+25	.	.
+</lem>
+<gr>
+xmod	7	17
+dobj	17	23
+conj	23	18
+conj	23	21
+conj	23	24
+ncmod	21	20
+ncsubj	7	1
+iobj	7	13
+dobj	7	9
+dobj	13	15
+ncmod	15	14
+det	9	8
+iobj	9	10
+dobj	10	12
+det	12	11
+ncmod	1	2
+dobj	2	6
+ncmod	6	3
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+</s>
+<s>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	6
+det	6	5
+iobj	6	7
+dobj	7	10
+ncmod	10	8
+conj	10	9
+conj	10	11
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	6
+det	6	5
+iobj	6	7
+dobj	7	10
+conj	10	9
+conj	10	11
+ncmod	9	8
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	10
+det	10	5
+conj	10	6
+conj	10	11
+iobj	6	7
+dobj	7	9
+ncmod	9	8
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	6
+det	6	5
+iobj	6	7
+dobj	7	10
+ncmod	10	8
+conj	10	9
+conj	10	11
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	6
+det	6	5
+iobj	6	7
+dobj	7	10
+conj	10	8
+conj	10	9
+conj	10	11
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	6
+det	6	5
+iobj	6	7
+dobj	7	10
+conj	10	8
+conj	10	9
+conj	10	11
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	10
+det	10	5
+conj	10	6
+conj	10	9
+conj	10	11
+iobj	6	7
+dobj	7	8
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	10
+conj	10	6
+conj	10	11
+det	6	5
+iobj	6	7
+dobj	7	9
+ncmod	9	8
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+<g>
+<lem>
+1	Natural	JJ
+2	language	NN1
+3	processing	NN1
+4	be	VBZ
+5	a	AT1
+6	field	NN1
+7	of	IO
+8	computer	NN1
+9	science	NN1
+10	and	CC
+11	linguistics	NN1
+12	.	.
+</lem>
+<gr>
+ncsubj	4	3
+xcomp	4	10
+conj	10	6
+conj	10	9
+conj	10	11
+det	6	5
+iobj	6	7
+dobj	7	8
+ncmod	3	1
+ncmod	3	2
+</gr>
+</g>
+</s>
+<s>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	5
+aux	7	6
+passive	7	17
+iobj	7	8
+dobj	8	14
+dobj	10	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	5
+aux	7	6
+passive	7	17
+iobj	7	8
+dobj	8	14
+ncmod	14	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	5
+ncmod	7	8
+dobj	8	14
+dobj	10	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+aux	7	6
+passive	7	17
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	5
+ncmod	7	8
+dobj	8	14
+ncmod	14	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+aux	7	6
+passive	7	17
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ta	7	15
+ncsubj	15	14
+ncmod	14	13
+ncmod	13	12
+ncsubj	7	5
+aux	7	6
+passive	7	17
+iobj	7	8
+dobj	8	9
+ncsubj	10	9
+xmod	9	10
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	process	VVG
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	3
+aux	7	6
+passive	7	17
+iobj	7	8
+dobj	8	14
+dobj	10	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+ncmod	3	1
+ncmod	3	2
+ncsubj	4	3
+xmod	3	4
+dobj	4	5
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	process	VVG
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	3
+aux	7	6
+passive	7	17
+iobj	7	8
+dobj	8	14
+ncmod	14	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+ncmod	3	1
+ncmod	3	2
+ncsubj	4	3
+xmod	3	4
+dobj	4	5
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	processing	NN1
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ta	7	15
+ncsubj	15	14
+ncmod	14	13
+ncmod	13	12
+ncsubj	7	5
+ncmod	7	8
+dobj	8	9
+ncsubj	10	9
+xmod	9	10
+aux	7	6
+passive	7	17
+ncmod	5	1
+ncmod	5	2
+ncmod	5	3
+ncmod	5	4
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	process	VVG
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	3
+ncmod	7	8
+dobj	8	14
+dobj	10	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+aux	7	6
+passive	7	17
+ncmod	3	1
+ncmod	3	2
+ncsubj	4	3
+xmod	3	4
+dobj	4	5
+</gr>
+</g>
+<g>
+<lem>
+1	Modern	JJ
+2	natural	JJ
+3	language	NN1
+4	process	VVG
+5	algorithm	NN2
+6	be	VBR
+7	ground	VVN
+8	in	II
+9	machine	NN1
+10	learn	VVG
+11	,	,
+12	especially	RR
+13	statistical	JJ
+14	machine	NN1
+15	learn	VVG
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	7	3
+ncmod	7	8
+dobj	8	14
+ncmod	14	9
+ncsubj	10	14
+ncmod	14	10
+ncmod	14	13
+ncsubj	15	14
+xmod	14	15
+ncmod	13	12
+aux	7	6
+passive	7	17
+ncmod	3	1
+ncmod	3	2
+ncsubj	4	3
+xmod	3	4
+dobj	4	5
+</gr>
+</g>
+</s>

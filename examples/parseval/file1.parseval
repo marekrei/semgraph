@@ -1,0 +1,58 @@
+%LB (
+%RB )
+
+1
+(xmod _ require+s:7 include+ing:17)
+(dobj include+ing:17 and:23)
+(conj and:23 linguistics:18)
+(conj and:23 science:21)
+(conj and:23 statistics:24)
+(ncmod _ science:21 computer:20)
+(ncsubj require+s:7 Research:1 _)
+(dobj require+s:7 understanding:9)
+(det understanding:9 an:8)
+(iobj understanding:9 of:10)
+(dobj of:10 number:12)
+(det number:12 a:11)
+(iobj number:12 of:13)
+(dobj of:13 field+s:15)
+(ncmod _ field+s:15 disparate:14)
+(ncmod _ Research:1 into:2)
+(dobj into:2 algorithm+s:6)
+(ncmod _ algorithm+s:6 modern:3)
+(ncmod _ algorithm+s:6 statistical:4)
+(ncmod _ algorithm+s:6 NLP:5)
+
+
+2
+(ncsubj be+s:4 processing:3 _)
+(xcomp _ be+s:4 field:6)
+(det field:6 a:5)
+(iobj field:6 of:7)
+(dobj of:7 and:10)
+(ncmod _ and:10 computer:8)
+(conj and:10 science:9)
+(conj and:10 linguistics:11)
+(ncmod _ processing:3 Natural:1)
+(ncmod _ processing:3 language:2)
+
+
+3
+(ncsubj ground+ed:7 algorithm+s:5 _)
+(aux ground+ed:7 be+:6)
+(passive ground+ed:7)
+(iobj ground+ed:7 in:8)
+(dobj in:8 machine:14)
+(dobj learn+ing:10 machine:9)
+(ncsubj learn+ing:10 machine:14 _)
+(ncmod _ machine:14 learn+ing:10)
+(ncmod _ machine:14 statistical:13)
+(ncsubj learn+ing:15 machine:14 _)
+(xmod _ machine:14 learn+ing:15)
+(ncmod _ statistical:13 especially:12)
+(ncmod _ algorithm+s:5 Modern:1)
+(ncmod _ algorithm+s:5 natural:2)
+(ncmod _ algorithm+s:5 language:3)
+(ncmod _ algorithm+s:5 processing:4)
+
+

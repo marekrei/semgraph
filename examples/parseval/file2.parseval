@@ -1,0 +1,50 @@
+%LB (
+%RB )
+
+1
+(ncsubj be+s:7 task:2 _)
+(xcomp to be+s:7 convert:9)
+(iobj convert:9 from:11)
+(dobj convert:9 information:10)
+(dobj from:11 database+s:13)
+(ncmod _ database+s:13 into:14)
+(dobj into:14 language:17)
+(ncmod _ language:17 readable:15)
+(ncmod _ language:17 human:16)
+(ncmod _ database+s:13 computer:12)
+(det task:2 The:1)
+(iobj task:2 of:3)
+(dobj of:3 generation:6)
+(ncmod _ generation:6 natural:4)
+(ncmod _ generation:6 language:5)
+
+
+2
+(ncsubj aim+s:2 Parsing:1 _)
+(xcomp to aim+s:2 determine:4)
+(iobj determine:4 of:12)
+(dobj determine:4 tree:7)
+(dobj of:12 sentence:15)
+(det sentence:15 a:13)
+(passive give+en:14)
+(ncsubj give+en:14 sentence:15 obj)
+(ncmod _ sentence:15 give+en:14)
+(ta bal tree:7 analysis:10)
+(ncmod _ analysis:10 grammatical:9)
+(det tree:7 the:5)
+(ncmod _ tree:7 parse:6)
+
+
+3
+(xmod _ concern+ed:4 and:9)
+(conj and:9 search+ing:8)
+(conj and:9 retrieve+ing:10)
+(dobj retrieve+ing:10 information:11)
+(ncsubj concern+ed:4 retrieval:2 _)
+(aux concern+ed:4 be+s:3)
+(passive concern+ed:4)
+(xcomp _ concern+ed:4 with:5)
+(xcomp _ with:5 store+ing:6)
+(ncmod _ retrieval:2 Information:1)
+
+

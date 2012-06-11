@@ -1,0 +1,974 @@
+<s>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+iobj	9	11
+dobj	9	10
+dobj	11	13
+ncmod	13	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+dobj	9	10
+ncmod	10	11
+dobj	11	13
+ncmod	13	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+dobj	9	10
+ncmod	10	11
+dobj	11	13
+ncmod	13	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+iobj	9	11
+dobj	9	10
+dobj	11	13
+ncmod	13	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+iobj	9	14
+dobj	9	10
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	10	11
+dobj	11	13
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+dobj	9	10
+ncmod	10	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	10	11
+dobj	11	13
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+dobj	9	10
+ncmod	10	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	10	11
+dobj	11	13
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+iobj	9	14
+iobj	9	11
+dobj	9	10
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+dobj	11	13
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+ncmod	7	11
+dobj	11	13
+ncmod	13	14
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	13	12
+xcomp	7	9
+dobj	9	10
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+<g>
+<lem>
+1	The	AT
+2	task	NN1
+3	of	IO
+4	natural	JJ
+5	language	NN1
+6	generation	NN1
+7	be	VBZ
+8	to	TO
+9	convert	VV0
+10	information	NN
+11	from	II
+12	computer	NN1
+13	database	NN2
+14	into	II
+15	readable	JJ
+16	human	JJ
+17	language	NN1
+18	.	.
+</lem>
+<gr>
+ncsubj	7	2
+xcomp	7	9
+iobj	9	14
+dobj	9	10
+dobj	14	17
+ncmod	17	15
+ncmod	17	16
+ncmod	10	11
+dobj	11	13
+ncmod	13	12
+det	2	1
+iobj	2	3
+dobj	3	6
+ncmod	6	4
+ncmod	6	5
+</gr>
+</g>
+</s>
+<s>
+<g>
+<lem>
+1	Parsing	NN1
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	2	1
+xcomp	2	4
+iobj	4	12
+dobj	4	7
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+det	7	5
+ncmod	7	6
+</gr>
+</g>
+<g>
+<lem>
+1	Parsing	NN1
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	2	1
+xcomp	2	4
+dobj	4	7
+det	7	5
+ncmod	7	6
+iobj	7	12
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+</gr>
+</g>
+<g>
+<lem>
+1	Parsing	NN1
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	2	1
+xmod	2	4
+iobj	4	12
+dobj	4	7
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+det	7	5
+ncmod	7	6
+</gr>
+</g>
+<g>
+<lem>
+1	Parse	VVG
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xsubj	2	1
+xcomp	2	4
+iobj	4	12
+dobj	4	7
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+det	7	5
+ncmod	7	6
+</gr>
+</g>
+<g>
+<lem>
+1	Parsing	NN1
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	2	1
+xmod	2	4
+dobj	4	7
+det	7	5
+ncmod	7	6
+iobj	7	12
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+</gr>
+</g>
+<g>
+<lem>
+1	Parse	VVG
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xsubj	2	1
+xcomp	2	4
+dobj	4	7
+det	7	5
+ncmod	7	6
+iobj	7	12
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+</gr>
+</g>
+<g>
+<lem>
+1	Parse	VVG
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xsubj	2	1
+xmod	2	4
+iobj	4	12
+dobj	4	7
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+det	7	5
+ncmod	7	6
+</gr>
+</g>
+<g>
+<lem>
+1	Parse	VVG
+2	aim	VVZ
+3	to	TO
+4	determine	VV0
+5	the	AT
+6	parse	NN1
+7	tree	NN1
+8	(	(
+9	grammatical	JJ
+10	analysis	NN1
+11	)	)
+12	of	IO
+13	a	AT1
+14	give	VVN
+15	sentence	NN1
+16	.	.
+17	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xsubj	2	1
+xmod	2	4
+dobj	4	7
+det	7	5
+ncmod	7	6
+iobj	7	12
+dobj	12	15
+det	15	13
+passive	14	17
+ncsubj	14	15
+ncmod	15	14
+ta	7	10
+ncmod	10	9
+</gr>
+</g>
+</s>
+<s>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+conj	9	8
+conj	9	10
+dobj	10	11
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	6
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+conj	9	8
+conj	9	10
+dobj	10	11
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	6
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+conj	9	8
+conj	9	10
+dobj	10	11
+ncsubj	4	2
+xmod	4	5
+xcomp	5	6
+aux	4	3
+passive	4	13
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+conj	9	8
+conj	9	10
+dobj	10	11
+ncsubj	4	2
+xmod	4	5
+xcomp	5	6
+aux	4	3
+passive	4	13
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	9
+dobj	9	11
+conj	9	6
+conj	9	8
+conj	9	10
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	9
+dobj	9	11
+conj	9	6
+conj	9	8
+conj	9	10
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	9
+conj	9	6
+conj	9	8
+conj	9	10
+dobj	10	11
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+dobj	9	11
+conj	9	8
+conj	9	10
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	6
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	9
+conj	9	6
+conj	9	8
+conj	9	10
+dobj	10	11
+ncmod	2	1
+</gr>
+</g>
+<g>
+<lem>
+1	Information	NN
+2	retrieval	NN1
+3	be	VBZ
+4	concern	VVN
+5	with	IW
+6	store	VVG
+7	,	,
+8	search	VVG
+9	and	CC
+10	retrieve	VVG
+11	information	NN
+12	.	.
+13	[[null]]	[[nullpos]]
+</lem>
+<gr>
+xmod	4	9
+dobj	9	11
+conj	9	8
+conj	9	10
+ncsubj	4	2
+aux	4	3
+passive	4	13
+xcomp	4	5
+xcomp	5	6
+ncmod	2	1
+</gr>
+</g>
+</s>

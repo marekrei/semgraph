@@ -1,0 +1,3 @@
+Research into modern statistical NLP algorithms requires an understanding of a number of disparate fields , including linguistics , computer science , and statistics .
+Natural language processing is a field of computer science and linguistics .
+Modern natural language processing algorithms are grounded in machine learning , especially statistical machine learning .

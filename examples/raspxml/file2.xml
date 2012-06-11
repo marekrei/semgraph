@@ -1,0 +1,134 @@
+<rasp><sentence num='1'>
+<lemma-list><lemma  lem='The' num='1' wnum='1'  pos='AT' /><lemma  lem='task' num='2' wnum='2'  pos='NN1' /><lemma  lem='of' num='3' wnum='3'  pos='IO' /><lemma  lem='natural' num='4' wnum='4'  pos='JJ' /><lemma  lem='language' num='5' wnum='5'  pos='NN1' /><lemma  lem='generation' num='6' wnum='6'  pos='NN1' /><lemma  lem='be' affix='s' num='7' wnum='7'  pos='VBZ' /><lemma  lem='to' num='8' wnum='8'  pos='TO' /><lemma  lem='convert' num='9' wnum='9'  pos='VV0' /><lemma  lem='information' num='10' wnum='10'  pos='NN' /><lemma  lem='from' num='11' wnum='11'  pos='II' /><lemma  lem='computer' num='12' wnum='12'  pos='NN1' /><lemma  lem='database' affix='s' num='13' wnum='13'  pos='NN2' /><lemma  lem='into' num='14' wnum='14'  pos='II' /><lemma  lem='readable' num='15' wnum='15'  pos='JJ' /><lemma  lem='human' num='16' wnum='16'  pos='JJ' /><lemma  lem='language' num='17' wnum='17'  pos='NN1' /><lemma  lem='.' num='18' wnum='18'  pos='.' /></lemma-list>
+<nbest-parses num='10'> 
+<parse-set pnum='1' score='-22.279'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='iobj' head='9' dep='11'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='2' score='-22.544'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='3' score='-22.597'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='4' score='-23.188'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='iobj' head='9' dep='11'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='5' score='-23.905'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='6' score='-24.170'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='10' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='7' score='-24.223'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='10' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='8' score='-24.441'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='iobj' head='9' dep='11'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='9' score='-24.809'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='ncmod' subtype='_' head='7' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='10' score='-24.814'> 
+<gr-list><gr type='ncsubj' head='7' dep='2'></gr><gr type='xcomp' subtype='to' head='7' dep='9'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='9' dep='10'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='ncmod' subtype='_' head='17' dep='15'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ncmod' subtype='_' head='10' dep='11'></gr><gr type='dobj' head='11' dep='13'></gr><gr type='ncmod' subtype='_' head='13' dep='12'></gr><gr type='det' head='2' dep='1'></gr><gr type='iobj' head='2' dep='3'></gr><gr type='dobj' head='3' dep='6'></gr><gr type='ncmod' subtype='_' head='6' dep='4'></gr><gr type='ncmod' subtype='_' head='6' dep='5'></gr>
+</gr-list>
+</parse-set>
+</nbest-parses>
+<ewg-weighted><gr type='dobj' head='11' dep='12'><gr-weight weight='0.000001'/></gr><gr type='ncmod' subtype='_' head='6' dep='5'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='13' dep='12'><gr-weight weight='0.999999'/></gr><gr type='ncmod' subtype='_' head='6' dep='4'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='13' dep='14'><gr-weight weight='0.972845'/></gr><gr type='ncmod' subtype='_' head='17' dep='16'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='10' dep='11'><gr-weight weight='0.486462'/></gr><gr type='ncmod' subtype='_' head='10' dep='14'><gr-weight weight='0.010972'/></gr><gr type='dobj' head='3' dep='6'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='17' dep='15'><gr-weight weight='1.0'/></gr><gr type='obj2' head='9' dep='13'><gr-weight weight='0.000001'/></gr><gr type='dobj' head='9' dep='10'><gr-weight weight='1.0'/></gr><gr type='iobj' head='9' dep='11'><gr-weight weight='0.512022'/></gr><gr type='iobj' head='9' dep='14'><gr-weight weight='0.015146'/></gr><gr type='dobj' head='11' dep='13'><gr-weight weight='0.999999'/></gr><gr type='dobj' head='14' dep='17'><gr-weight weight='1.0'/></gr><gr type='iobj' head='2' dep='3'><gr-weight weight='1.0'/></gr><gr type='xcomp' subtype='to' head='7' dep='9'><gr-weight weight='1.0'/></gr><gr type='det' head='2' dep='1'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='7' dep='11'><gr-weight weight='0.001516'/></gr><gr type='ncmod' subtype='_' head='7' dep='14'><gr-weight weight='0.001037'/></gr><gr type='ncsubj' head='7' dep='2'><gr-weight weight='1.0'/></gr>
+</ewg-weighted>
+</sentence>
+<sentence num='2'>
+<lemma-list><lemma  lem='Parse' affix='ing' num='1' wnum='1'  pos='VVG' /><lemma  lem='Parsing' num='2' wnum='1'  pos='NN1' /><lemma  lem='aim' affix='s' num='3' wnum='2'  pos='NN2' /><lemma  lem='aim' affix='s' num='4' wnum='2'  pos='VVZ' /><lemma  lem='to' num='5' wnum='3'  pos='TO' /><lemma  lem='determine' num='6' wnum='4'  pos='VV0' /><lemma  lem='the' num='7' wnum='5'  pos='AT' /><lemma  lem='parse' num='8' wnum='6'  pos='NN1' /><lemma  lem='tree' num='9' wnum='7'  pos='NN1' /><lemma  lem='(' num='10' wnum='8'  pos='(' /><lemma  lem='grammatical' num='11' wnum='9'  pos='JJ' /><lemma  lem='analysis' num='12' wnum='10'  pos='NN1' /><lemma  lem=')' num='13' wnum='11'  pos=')' /><lemma  lem='of' num='14' wnum='12'  pos='IO' /><lemma  lem='a' num='15' wnum='13'  pos='AT1' /><lemma  lem='give' affix='en' num='16' wnum='14'  pos='VVN' /><lemma  lem='sentence' num='17' wnum='15'  pos='NN1' /><lemma  lem='.' num='18' wnum='16'  pos='.' /></lemma-list>
+<nbest-parses num='8'> 
+<parse-set pnum='1' score='-33.574'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='xcomp' subtype='to' head='4' dep='6'></gr><gr type='iobj' head='6' dep='14'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='2' score='-38.502'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='xcomp' subtype='to' head='4' dep='6'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='3' score='-40.152'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='xmod' subtype='to' head='4' dep='6'></gr><gr type='iobj' head='6' dep='14'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='4' score='-41.315'> 
+<gr-list><gr type='xsubj' head='4' dep='1'></gr><gr type='xcomp' subtype='to' head='4' dep='6'></gr><gr type='iobj' head='6' dep='14'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='5' score='-45.080'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='xmod' subtype='to' head='4' dep='6'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='6' score='-46.243'> 
+<gr-list><gr type='xsubj' head='4' dep='1'></gr><gr type='xcomp' subtype='to' head='4' dep='6'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='7' score='-47.953'> 
+<gr-list><gr type='xsubj' head='4' dep='1'></gr><gr type='xmod' subtype='to' head='4' dep='6'></gr><gr type='iobj' head='6' dep='14'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='8' score='-52.882'> 
+<gr-list><gr type='xsubj' head='4' dep='1'></gr><gr type='xmod' subtype='to' head='4' dep='6'></gr><gr type='dobj' head='6' dep='9'></gr><gr type='det' head='9' dep='7'></gr><gr type='ncmod' subtype='_' head='9' dep='8'></gr><gr type='iobj' head='9' dep='14'></gr><gr type='dobj' head='14' dep='17'></gr><gr type='det' head='17' dep='15'></gr><gr type='passive' head='16'></gr><gr type='ncsubj' head='16' dep='17' init='obj'></gr><gr type='ncmod' subtype='_' head='17' dep='16'></gr><gr type='ta' subtype='bal' head='9' dep='12'></gr><gr type='ncmod' subtype='_' head='12' dep='11'></gr>
+</gr-list>
+</parse-set>
+</nbest-parses>
+<ewg-weighted><gr type='ncmod' subtype='_' head='12' dep='11'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='17' dep='16'><gr-weight weight='1.0'/></gr><gr type='ncsubj' head='16' dep='17' init='obj'><gr-weight weight='1.0'/></gr><gr type='passive' head='16'><gr-weight weight='1.0'/></gr><gr type='iobj' head='9' dep='14'><gr-weight weight='0.000012'/></gr><gr type='det' head='17' dep='15'><gr-weight weight='1.0'/></gr><gr type='ncmod' subtype='_' head='9' dep='8'><gr-weight weight='1.0'/></gr><gr type='dobj' head='14' dep='17'><gr-weight weight='1.0'/></gr><gr type='det' head='9' dep='7'><gr-weight weight='1.0'/></gr><gr type='ta' subtype='bal' head='9' dep='12'><gr-weight weight='1.0'/></gr><gr type='dobj' head='6' dep='9'><gr-weight weight='1.0'/></gr><gr type='iobj' head='6' dep='14'><gr-weight weight='0.999988'/></gr><gr type='xmod' subtype='to' head='4' dep='6'><gr-weight weight='0.0000003'/></gr><gr type='xcomp' subtype='to' head='4' dep='6'><gr-weight weight='1.000000'/></gr><gr type='xsubj' head='4' dep='1'><gr-weight weight='0.0000000'/></gr><gr type='ncsubj' head='4' dep='2'><gr-weight weight='1.0'/></gr>
+</ewg-weighted>
+</sentence>
+<sentence num='3'>
+<lemma-list><lemma  lem='Information' num='1' wnum='1'  pos='NN' /><lemma  lem='retrieval' num='2' wnum='2'  pos='NN1' /><lemma  lem='be' affix='s' num='3' wnum='3'  pos='VBZ' /><lemma  lem='concern' affix='ed' num='4' wnum='4'  pos='VVN' /><lemma  lem='with' num='5' wnum='5'  pos='IW' /><lemma  lem='store' affix='ing' num='6' wnum='6'  pos='VVG' /><lemma  lem=',' num='7' wnum='7'  pos=',' /><lemma  lem='search' affix='ing' num='8' wnum='8'  pos='VVG' /><lemma  lem='and' num='9' wnum='9'  pos='CC' /><lemma  lem='retrieve' affix='ing' num='10' wnum='10'  pos='VVG' /><lemma  lem='information' num='11' wnum='11'  pos='NN' /><lemma  lem='.' num='12' wnum='12'  pos='.' /></lemma-list>
+<nbest-parses num='10'> 
+<parse-set pnum='1' score='-15.466'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='2' score='-15.519'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='3' score='-16.485'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='xmod' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='4' score='-16.538'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='xmod' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='5' score='-17.045'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='9'></gr><gr type='dobj' head='9' dep='11'></gr><gr type='conj' head='9' dep='6'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='6' score='-17.097'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='9'></gr><gr type='dobj' head='9' dep='11'></gr><gr type='conj' head='9' dep='6'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='7' score='-17.675'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='9'></gr><gr type='conj' head='9' dep='6'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='8' score='-17.722'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='dobj' head='9' dep='11'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='9' score='-17.728'> 
+<gr-list><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='9'></gr><gr type='conj' head='9' dep='6'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='dobj' head='10' dep='11'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+<parse-set pnum='10' score='-17.908'> 
+<gr-list><gr type='xmod' subtype='_' head='4' dep='9'></gr><gr type='dobj' head='9' dep='11'></gr><gr type='conj' head='9' dep='8'></gr><gr type='conj' head='9' dep='10'></gr><gr type='ncsubj' head='4' dep='2'></gr><gr type='aux' head='4' dep='3'></gr><gr type='passive' head='4'></gr><gr type='xcomp' subtype='_' head='4' dep='5'></gr><gr type='xcomp' subtype='_' head='5' dep='6'></gr><gr type='ncmod' subtype='_' head='2' dep='1'></gr>
+</gr-list>
+</parse-set>
+</nbest-parses>
+<ewg-weighted><gr type='conj' head='9' dep='6'><gr-weight weight='0.031049'/></gr><gr type='ncmod' subtype='_' head='11' dep='6'><gr-weight weight='0.0000000'/></gr><gr type='ncsubj' head='6' dep='11'><gr-weight weight='0.0000000'/></gr><gr type='xcomp' subtype='_' head='5' dep='6'><gr-weight weight='0.968951'/></gr><gr type='xcomp' subtype='_' head='5' dep='9'><gr-weight weight='0.031049'/></gr><gr type='dobj' head='5' dep='11'><gr-weight weight='0.0000001'/></gr><gr type='dobj' head='10' dep='11'><gr-weight weight='0.970154'/></gr><gr type='xcomp' subtype='_' head='4' dep='5'><gr-weight weight='0.912909'/></gr><gr type='iobj' head='4' dep='5'><gr-weight weight='0.0000001'/></gr><gr type='ncmod' subtype='_' head='11' dep='9'><gr-weight weight='0.0000001'/></gr><gr type='ncsubj' head='9' dep='11'><gr-weight weight='0.0000001'/></gr><gr type='conj' head='9' dep='10'><gr-weight weight='1.0'/></gr><gr type='passive' head='4'><gr-weight weight='0.999999'/></gr><gr type='aux' head='4' dep='3'><gr-weight weight='0.999999'/></gr><gr type='xmod' subtype='_' head='4' dep='5'><gr-weight weight='0.087091'/></gr><gr type='ncmod' subtype='_' head='4' dep='5'><gr-weight weight='0.0000000'/></gr><gr type='passive' head='9'><gr-weight weight='0.000001'/></gr><gr type='aux' head='9' dep='3'><gr-weight weight='0.000001'/></gr><gr type='ncmod' subtype='_' head='2' dep='1'><gr-weight weight='1.0'/></gr><gr type='conj' head='9' dep='4'><gr-weight weight='0.000001'/></gr><gr type='conj' head='9' dep='8'><gr-weight weight='1.0'/></gr><gr type='dobj' head='9' dep='11'><gr-weight weight='0.029846'/></gr><gr type='ncsubj' head='4' dep='2'><gr-weight weight='0.999999'/></gr><gr type='ncsubj' head='9' dep='2'><gr-weight weight='0.000001'/></gr><gr type='ta' subtype='comma' head='4' dep='11'><gr-weight weight='0.0000000'/></gr><gr type='xmod' subtype='_' head='4' dep='9'><gr-weight weight='0.968949'/></gr>
+</ewg-weighted>
+</sentence>
+</rasp>
