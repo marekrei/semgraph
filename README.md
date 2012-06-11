@@ -18,6 +18,8 @@ It is designed so that the underlying parser can be easily changed without affec
 The visualiser creates a dynamic view of the graphs. An experimental feature can be enabled to also edit the graphs using the visualiser (e.g., correcting parses).
 
 
+![The graph visualiser](http://www.marekrei.com/img/graphvisualiser_screenshot.png "The graph visualiser")
+
 
 Supported formats
 -----------------
@@ -44,6 +46,7 @@ The visualiser is in sem.graphvis.GraphVisualiser.
 Take a look at the classes in the sem.examples package for an idea of how to use the readers and the visualiser.
 
 The Prefuse library needs to be included for the visualisation: <http://prefuse.org/>
+
 The JUnit library needs to be included for the unit tests: <http://junit.sourceforge.net/>
 
 
