@@ -2,7 +2,9 @@ SemGraph
 =========
 
 Author:		Marek Rei (marek@marekrei.com)
+
 Version:	0.1
+
 Updated:	2012-06-11
 
 
