@@ -16,13 +16,13 @@ Documentation:	<http://www.marekrei.com/doc/semgraph/>
 About
 -----
 
-SemGraph is a library for reading, writing and visualising graphs, mostly meant for dependency graphs of sentences.
+SemGraph is a Java library for reading, writing and visualising graphs, mostly meant for dependency graphs of sentences.
 After parsing a large corpus of text, this can be used to conveniently iterate over sentences to collect features, build vector space models or analyse the parser output.
 It is designed so that the underlying parser can be easily changed without affecting the rest of the implementation.
 The visualiser creates a dynamic view of the graphs. An experimental feature can be enabled to also edit the graphs using the visualiser (e.g., correcting parses).
 
 
-![The graph visualiser](http://www.marekrei.com/img/graphvisualiser_screenshot.png)
+![](http://www.marekrei.com/img/graphvisualiser_screenshot.png "The graph visualiser")
 
 
 Supported formats
@@ -36,10 +36,22 @@ Currently, the following input formats are supported:
 * parseval - One of the outputs of the RASP parser and the format used by the Depbank/GR dataset.
 * tsv - A simplified tab-separated format for representing graphs and sentences.
 
-Please see the files in the examples directory for a better idea of the different formats.
+Please see the files in the examples directory for a better idea of the different formats. For example, here is a dependency graph in the rasp format:
+
+	(|Natural| |language| |processing| |is| |a| |field| |of| |computer| |science| |and| |linguistics| |.|) 1 ;
+	gr-list: 1
+	(|ncsubj| |be+s:4_VBZ| |processing:3_NN1| _)
+	(|xcomp| _ |be+s:4_VBZ| |field:6_NN1|)
+	(|det| |field:6_NN1| |a:5_AT1|)
+	(|iobj| |field:6_NN1| |of:7_IO|)
+	(|dobj| |of:7_IO| |and:10_CC|)
+	(|ncmod| _ |and:10_CC| |computer:8_NN1|)
+	(|conj| |and:10_CC| |science:9_NN1|)
+	(|conj| |and:10_CC| |linguistics:11_NN1|)
+	(|ncmod| _ |processing:3_NN1| |Natural:1_JJ|)
+	(|ncmod| _ |processing:3_NN1| |language:2_NN1|)
 
 There is also a class for writing in the tsv format. This allows the user to load the graphs, edit them, save, and load again.
-
 
 
 Usage
@@ -52,6 +64,29 @@ The Prefuse library needs to be included for the visualisation: <http://prefuse.
 
 The JUnit library needs to be included for the unit tests: <http://junit.sourceforge.net/>
 
+Here is some example code for reading in graphs from the input file, printing out information about their nodes and edges, and running the visualiser.
+
+	// Open the reader
+	RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", false, false);
+	// Create a list for storing the graphs
+	ArrayList<Graph> graphs = new ArrayList<Graph>();
+	// Iterate over graphs
+	while(reader.hasNext()){ 
+		Graph graph = reader.next();
+		// Iterate over nodes
+		for(Node node : graph.getNodes()) 
+			System.out.println("NODE: " + node.getLemma() + " " + node.getPos());
+		// Iterate over edges
+		for(Edge edge : graph.getEdges()) 
+			System.out.println("EDGE: " + edge.getLabel() + " " + edge.getHead().getLemma() + " " + edge.getDep().getLemma());
+		graphs.add(graph);
+		System.out.println();
+	}
+	// Close the reader
+	reader.close();
+	// Run the visualiser
+	GraphVisualiser graphVisualiser = new GraphVisualiser(false);
+	graphVisualiser.displayGraphs(graphs);
 
 License
 -------
