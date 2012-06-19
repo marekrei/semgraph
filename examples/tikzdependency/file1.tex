@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-dependency}
+\usepackage[graphics,tightpage,active]{preview}
+\PreviewEnvironment{dependency}
+\begin{document}
+\begin{dependency}[theme = simple]
+\begin{deptext}[column sep=1em]
+Research \& into \& modern \& statistical \& NLP \& algorithm \& require \& an \& understanding \& of \& a \& number \& of \& disparate \& field \& , \& include \& linguistics \& , \& computer \& science \& , \& and \& statistics \& . \\
+NN1 \& II \& JJ \& JJ \& NP1 \& NN2 \& VVZ \& AT1 \& NN1 \& IO \& AT1 \& NN1 \& IO \& JJ \& NNL2 \& , \& VVG \& NN1 \& , \& NN1 \& NN1 \& , \& CC \& NN \& . \\
+\end{deptext}
+\depedge{7}{17}{xmod}
+\depedge{17}{23}{dobj}
+\depedge{23}{18}{conj}
+\depedge{23}{21}{conj}
+\depedge{23}{24}{conj}
+\depedge{21}{20}{ncmod}
+\depedge{7}{1}{ncsubj}
+\depedge{7}{9}{dobj}
+\depedge{9}{8}{det}
+\depedge{9}{10}{iobj}
+\depedge{10}{12}{dobj}
+\depedge{12}{11}{det}
+\depedge{12}{13}{iobj}
+\depedge{13}{15}{dobj}
+\depedge{15}{14}{ncmod}
+\depedge{1}{2}{ncmod}
+\depedge{2}{6}{dobj}
+\depedge{6}{3}{ncmod}
+\depedge{6}{4}{ncmod}
+\depedge{6}{5}{ncmod}
+\end{dependency}
+
+\begin{dependency}[theme = simple]
+\begin{deptext}[column sep=1em]
+Natural \& language \& processing \& be \& a \& field \& of \& computer \& science \& and \& linguistics \& . \\
+JJ \& NN1 \& NN1 \& VBZ \& AT1 \& NN1 \& IO \& NN1 \& NN1 \& CC \& NN1 \& . \\
+\end{deptext}
+\depedge{4}{3}{ncsubj}
+\depedge{4}{6}{xcomp}
+\depedge{6}{5}{det}
+\depedge{6}{7}{iobj}
+\depedge{7}{10}{dobj}
+\depedge{10}{8}{ncmod}
+\depedge{10}{9}{conj}
+\depedge{10}{11}{conj}
+\depedge{3}{1}{ncmod}
+\depedge{3}{2}{ncmod}
+\end{dependency}
+
+\begin{dependency}[theme = simple]
+\begin{deptext}[column sep=1em]
+Modern \& natural \& language \& processing \& algorithm \& be \& ground \& in \& machine \& learn \& , \& especially \& statistical \& machine \& learn \& . \& {[}{[}null{]}{]} \\
+JJ \& JJ \& NN1 \& NN1 \& NN2 \& VBR \& VVN \& II \& NN1 \& VVG \& , \& RR \& JJ \& NN1 \& VVG \& . \& {[}{[}nullpos{]}{]} \\
+\end{deptext}
+\depedge{7}{5}{ncsubj}
+\depedge{7}{6}{aux}
+\depedge{7}{17}{passive}
+\depedge{7}{8}{iobj}
+\depedge{8}{14}{dobj}
+\depedge{10}{9}{dobj}
+\depedge{10}{14}{ncsubj}
+\depedge{14}{10}{ncmod}
+\depedge{14}{13}{ncmod}
+\depedge{15}{14}{ncsubj}
+\depedge{14}{15}{xmod}
+\depedge{13}{12}{ncmod}
+\depedge{5}{1}{ncmod}
+\depedge{5}{2}{ncmod}
+\depedge{5}{3}{ncmod}
+\depedge{5}{4}{ncmod}
+\end{dependency}
+
+\end{document}

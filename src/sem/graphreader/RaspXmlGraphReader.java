@@ -4,6 +4,7 @@ package sem.graphreader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map.Entry;
 
 import sem.graph.Edge;
 import sem.graph.Graph;
@@ -66,6 +67,47 @@ public class RaspXmlGraphReader implements GraphReader{
 	private ArrayList<Node> selectNodes(LinkedHashMap<Integer,Node> lemmas, HashMap<Node,Integer> wordIds, HashMap<Node, Node> nodeMap){
 		ArrayList<Node> selectedNodes = new ArrayList<Node>();
 		
+		HashMap<Integer,ArrayList<Node>> wordMap = new HashMap<Integer,ArrayList<Node>>();
+		int maxWordNum = -1;
+		for(Entry<Node,Integer> e : wordIds.entrySet()){
+			if(!wordMap.containsKey(e.getValue()))
+				wordMap.put(e.getValue(), new ArrayList<Node>());
+			wordMap.get(e.getValue()).add(e.getKey());
+			if(e.getValue() > maxWordNum)
+				maxWordNum = e.getValue();
+		}
+		
+		for(int i = 0; i <= maxWordNum; i++){
+			if(!wordMap.containsKey(i))
+				continue;
+			Node chosenNode = null;
+			for(Node node : wordMap.get(i)){
+				if(nodeMap != null && nodeMap.containsKey(node)){
+					if(chosenNode == null)
+						chosenNode = nodeMap.get(node);
+					else
+						throw new RuntimeException("GRs are pointing to multiple lemmas of the same word.");
+				}
+			}
+			if(chosenNode == null)
+				chosenNode = wordMap.get(i).get(0);
+			selectedNodes.add(chosenNode);
+		}
+		
+		// Now we add all nodes that are in the graph but were not in the list of lemmas (ellip and nil).
+		if(nodeMap != null){
+			for(Node node : nodeMap.values()){
+				if(!selectedNodes.contains(node))
+					selectedNodes.add(node);
+			}
+		}
+		
+		return selectedNodes;
+	}
+	/*
+	private ArrayList<Node> selectNodes(LinkedHashMap<Integer,Node> lemmas, HashMap<Node,Integer> wordIds, HashMap<Node, Node> nodeMap){
+		ArrayList<Node> selectedNodes = new ArrayList<Node>();
+		
 		int first, index = 0;
 		boolean foundMatch;
 		while(index < lemmas.size()){
@@ -98,7 +140,7 @@ public class RaspXmlGraphReader implements GraphReader{
 		
 		return selectedNodes;
 	}
-	
+	*/
 	/**
 	 * Read the next sentence of graphs from the corpus.
 	 * If the sentence contains no valid graphs, return a list with one graph containing no edges.

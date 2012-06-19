@@ -1,17 +1,19 @@
 package sem.examples;
 
+import java.util.ArrayList;
+
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
 import sem.graphreader.GraphFormatException;
 import sem.graphreader.RaspXmlGraphReader;
+import sem.graphvis.GraphVisualiser;
 
 /**
  * Example class.
  * Shows how to iterate over graphs and print out some information.
  */
 public class ReadGraph {
-
 
 	public static void main(String[] args) {
 		try {
@@ -27,11 +29,12 @@ public class ReadGraph {
 					System.out.println("EDGE: " + edge.getLabel() + " " + edge.getHead().getLemma() + " " + edge.getDep().getLemma());
 				System.out.println();
 			}
+			reader.close();
 		} catch (GraphFormatException e) {
 			e.printLine(); // The error usually contains the line that was being parsed when the error occurred.
 			e.printStackTrace();
 		}
 		
 	}
-
+	
 }
