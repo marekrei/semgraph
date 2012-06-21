@@ -26,7 +26,19 @@ import sem.util.XmlReader;
  * <p>The big example file was parsed with this command and then gzipped, to save time and space:
  * <code>./rasp.sh -m -p'-mg -pr' < input.txt > output.xml</code>
  * 
- *
+ * <p>There are two cases where the output from RASP does not exactly correspond to a graph. 
+ * First, the passive property for verbs is represented as an edge where the verb is the head but the dependent does not exist.
+ * This is solved by adding a new 'null' node to the graph that acts as a dependent for that edge.
+ * Second, the head of a relation can be marked as an ellipsis, which doesn't correspond to any lemma in the sentence. 
+ * In such a case, a new 'ellip' node is added to the graph that acts as the head.
+ * If these nodes/edges are not needed, they should be removed in post-processing.
+ * 
+ * <p>There are also two possible ways of selecting nodes for the node list of each graph:
+ * <ul>
+ * <li>NODES_ALL - Include all lemmas that RASP outputs for a given sentence. If the option of multiple POS tags is activated, this can result in multiple nodes that correspond to a single token.
+ * <li>NODES_TOKENS - If a lemma is used in the edges of a graph, that's the one we include. Otherwise, if a token does not have any lemmas participating in the edges, add the first lemma of this token to the list of nodes. This should result in matching numbers of nodes and tokens.
+ * </ul>
+ * If the multiple tags option is not activated, both of these modes should give the same output.
  */
 public class RaspXmlGraphReader implements GraphReader{
 	private boolean getAllParses;
@@ -37,63 +49,86 @@ public class RaspXmlGraphReader implements GraphReader{
 	private int sentenceCount;
 	private String ellipLemma = "ellip";
 	private ArrayList<String> domPath;
+	private int nodeSelectionMode;
+	
+	/**
+	 * The nodes list will contain all the lemmas given by RASP, including the cases where two lemmas correspond to the same token.
+	 */
+	public static final int NODES_ALL = 0;
+	
+	/**
+	 * The system tries to construct the most likely set of lemmas, given the sentence and the graph. A node is included if it is used in one of the edges. Also, if a word is not used in the edges at all, its first lemma is included. This way the number of tokens in the sentence and the number of nodes in the graph should match.
+	 */
+	public static final int NODES_TOKENS = 1;
 	
 	/**
 	 * Create a new reader for RASP XML.
 	 * @param inputPath		Path to the file or directory.
+	 * @param nodeSelectionMode		Set the way that nodes are added to the list of nodes in the graph.
 	 * @param getAllParses	Whether to include alternative parses for each sentence (if available).
 	 * @param getMetaData	Whether to read metadata (sentence id and weighted grs).
 	 * @throws GraphFormatException 
 	 */
-	public RaspXmlGraphReader(String inputPath, boolean getAllParses, boolean getMetaData) throws GraphFormatException{
+	public RaspXmlGraphReader(String inputPath, int nodeSelectionMode, boolean getAllParses, boolean getMetaData) throws GraphFormatException{
 		this.getAllParses = getAllParses;
 		this.getMetaData = getMetaData;
 		this.nextSentence = null;
 		this.nextGraphPointer = 0;
 		this.xmlReader = new XmlReader(inputPath);
 		this.domPath = new ArrayList<String>();
+		this.nodeSelectionMode = nodeSelectionMode;
 		this.reset();
 	}
 	
 	/**
-	 * Select the list of nodes to be added to the graph.
-	 * We want every word to have a lemma represented in the graph. If a lemma is used in the GRs, that's the one we include. Otherwise, take the first on from the list of nodes.
-	 * Also have to remember that we want to add clones of the lemma nodes, to allow for independent editing.
+	 * Select the list of nodes to be added to the graph, based on the specified node selection mode.
+	 * We want every word to have a lemma represented in the graph. 
+	 * Also have to remember that we want to add clones of the lemma nodes, so that different Graph object do not share the same Node objects. This allows for independent editing of the graphs.
+	 * @param nodeSelectionMode
 	 * @param lemmas	
 	 * @param wordIds
 	 * @param nodeMap
 	 * @return
 	 */
-	private ArrayList<Node> selectNodes(LinkedHashMap<Integer,Node> lemmas, HashMap<Node,Integer> wordIds, HashMap<Node, Node> nodeMap){
+	private ArrayList<Node> selectNodes(int nodeSelectionMode, LinkedHashMap<Integer,Node> lemmas, HashMap<Node,Integer> wordIds, HashMap<Node, Node> nodeMap){
 		ArrayList<Node> selectedNodes = new ArrayList<Node>();
 		
-		HashMap<Integer,ArrayList<Node>> wordMap = new HashMap<Integer,ArrayList<Node>>();
-		int maxWordNum = -1;
-		for(Entry<Node,Integer> e : wordIds.entrySet()){
-			if(!wordMap.containsKey(e.getValue()))
-				wordMap.put(e.getValue(), new ArrayList<Node>());
-			wordMap.get(e.getValue()).add(e.getKey());
-			if(e.getValue() > maxWordNum)
-				maxWordNum = e.getValue();
-		}
-		
-		for(int i = 0; i <= maxWordNum; i++){
-			if(!wordMap.containsKey(i))
-				continue;
-			Node chosenNode = null;
-			for(Node node : wordMap.get(i)){
-				if(nodeMap != null && nodeMap.containsKey(node)){
-					if(chosenNode == null)
-						chosenNode = nodeMap.get(node);
-					else
-						throw new RuntimeException("GRs are pointing to multiple lemmas of the same word.");
-				}
+		if(nodeSelectionMode == RaspXmlGraphReader.NODES_ALL){
+			for(Node lemma : lemmas.values()){
+				if(nodeMap != null && nodeMap.containsKey(lemma))
+					selectedNodes.add(nodeMap.get(lemma));
+				else
+					selectedNodes.add(lemma.clone());
 			}
-			if(chosenNode == null)
-				chosenNode = wordMap.get(i).get(0);
-			selectedNodes.add(chosenNode);
 		}
-		
+		else if(nodeSelectionMode == RaspXmlGraphReader.NODES_TOKENS){
+			HashMap<Integer,ArrayList<Node>> wordMap = new HashMap<Integer,ArrayList<Node>>();
+			int maxWordNum = -1;
+			for(Entry<Node,Integer> e : wordIds.entrySet()){
+				if(!wordMap.containsKey(e.getValue()))
+					wordMap.put(e.getValue(), new ArrayList<Node>());
+				wordMap.get(e.getValue()).add(e.getKey());
+				if(e.getValue() > maxWordNum)
+					maxWordNum = e.getValue();
+			}
+			
+			for(int i = 0; i <= maxWordNum; i++){
+				if(!wordMap.containsKey(i))
+					continue;
+				Node chosenNode = null;
+				for(Node node : wordMap.get(i)){
+					if(nodeMap != null && nodeMap.containsKey(node)){
+						if(chosenNode == null)
+							chosenNode = nodeMap.get(node);
+						else
+							throw new RuntimeException("GRs are pointing to multiple lemmas of the same word.");
+					}
+				}
+				if(chosenNode == null)
+					chosenNode = wordMap.get(i).get(0);
+				selectedNodes.add(chosenNode);
+			}
+		}
 		// Now we add all nodes that are in the graph but were not in the list of lemmas (ellip and nil).
 		if(nodeMap != null){
 			for(Node node : nodeMap.values()){
@@ -101,7 +136,6 @@ public class RaspXmlGraphReader implements GraphReader{
 					selectedNodes.add(node);
 			}
 		}
-		
 		return selectedNodes;
 	}
 	/*
@@ -282,8 +316,7 @@ public class RaspXmlGraphReader implements GraphReader{
 						graph.addEdge(edge.getLabel(), nodeMap.get(edge.getHead()), nodeMap.get(edge.getDep()));
 					}
 					
-					for(Node node : selectNodes(lemmas, wordIds, nodeMap))
-						graph.addNode(node);
+					graph.getNodes().addAll(selectNodes(this.nodeSelectionMode, lemmas, wordIds, nodeMap));
 				}
 				
 				else if(tag.equals("sentence")){
@@ -302,8 +335,8 @@ public class RaspXmlGraphReader implements GraphReader{
 		if(graphs != null && graphs.size() == 0){
 			Graph graph = new Graph();
 			graphs.add(graph);
-			for(Node node : selectNodes(lemmas, wordIds, null))
-				graph.addNode(node);
+
+			graph.getNodes().addAll(selectNodes(this.nodeSelectionMode, lemmas, wordIds, null));
 		}
 		
 		return graphs;

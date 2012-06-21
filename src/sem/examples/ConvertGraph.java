@@ -15,7 +15,7 @@ import sem.graphwriter.TSVGraphWriter;
 public class ConvertGraph {
 	public static void main(String[] args) {
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/pnp_1000.xml.gz", true, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/pnp_1000.xml.gz", RaspXmlGraphReader.NODES_TOKENS, true, true);
 			TSVGraphWriter writer = new TSVGraphWriter("examples/tsv/pnp_1000.tsv");
 			while(reader.hasNext()){
 				ArrayList<Graph> sentence = reader.nextSentence();

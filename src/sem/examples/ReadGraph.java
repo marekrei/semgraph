@@ -17,7 +17,7 @@ public class ReadGraph {
 
 	public static void main(String[] args) {
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", false, false);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", RaspXmlGraphReader.NODES_TOKENS, false, false);
 			while(reader.hasNext()){ 
 				// Get the next graph
 				Graph graph = reader.next();

@@ -3,9 +3,9 @@ SemGraph
 
 Author:		Marek Rei (marek@marekrei.com)
 
-Version:	0.1
+Version:	0.2
 
-Updated:	2012-06-11
+Updated:	2012-06-20
 
 Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
@@ -22,12 +22,14 @@ It is designed so that the underlying parser can be easily changed without affec
 The visualiser creates a dynamic view of the graphs. An experimental feature can be enabled to also edit the graphs using the visualiser (e.g., correcting parses).
 
 
-![](http://www.marekrei.com/img/graphvisualiser_screenshot.png "The graph visualiser")
+![](http://www.marekrei.com/img/semgraph_graphvisualiser_screenshot.png "The graph visualiser")
 
+![](http://www.marekrei.com/img/semgraph_latex.png "LaTeX representation")
 
 Supported formats
 -----------------
 
+Also, the graphs can be
 Currently, the following input formats are supported:
 
 * rasp - The default output from the RASP parser <http://ilexir.co.uk/2011/open-source-rasp-release/>
@@ -35,6 +37,11 @@ Currently, the following input formats are supported:
 * cnc - The default output format from the C&C parser. <http://svn.ask.it.usyd.edu.au/trac/candc/>
 * parseval - One of the outputs of the RASP parser and the format used by the Depbank/GR dataset.
 * tsv - A simplified tab-separated format for representing graphs and sentences.
+
+Also, the graphs can be written to an output file and the following formats are available:
+
+* tsv - A simple tab-separated format. This format is supported for both reading and writing.
+* tikzdependency - Produces a LaTeX representation of the graphs using the tikz-dependency library.
 
 Please see the files in the examples directory for a better idea of the different formats. For example, here is a dependency graph in the rasp format:
 
@@ -51,8 +58,6 @@ Please see the files in the examples directory for a better idea of the differen
 	(|ncmod| _ |processing:3_NN1| |Natural:1_JJ|)
 	(|ncmod| _ |processing:3_NN1| |language:2_NN1|)
 
-There is also a class for writing in the tsv format. This allows the user to load the graphs, edit them, save, and load again.
-
 
 Usage
 -----
@@ -63,6 +68,8 @@ Take a look at the classes in the sem.examples package for an idea of how to use
 The Prefuse library needs to be included for the visualisation: <http://prefuse.org/>
 
 The JUnit library needs to be included for the unit tests: <http://junit.sourceforge.net/>
+
+Tikz-dependency library is needed to convert the LaTeX representation to pdf: <http://sourceforge.net/projects/tikz-dependency/>
 
 Here is some example code for reading in graphs from the input file, printing out information about their nodes and edges, and running the visualiser.
 
@@ -87,6 +94,18 @@ Here is some example code for reading in graphs from the input file, printing ou
 	// Run the visualiser
 	GraphVisualiser graphVisualiser = new GraphVisualiser(false);
 	graphVisualiser.displayGraphs(graphs);
+
+
+Changes
+-------
+
+**0.2**
+* Added support for writing graphs to LaTeX, using the tikz-dependency library.
+* Added the option to specify how nodes are created in the RaspXmlGraphReader (either based on lemmas or tokens).
+
+**0.1**
+* Initial release
+
 
 License
 -------

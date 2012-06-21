@@ -17,7 +17,7 @@ public class VisualiseGraph {
 	public static void main(String[] args){
 		try {
 			ArrayList<ArrayList<Graph>> sentences = new ArrayList<ArrayList<Graph>>();
-			GraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", true, true);
+			GraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", RaspXmlGraphReader.NODES_TOKENS, true, true);
 			while(reader.hasNext())
 				sentences.add(reader.nextSentence());
 			reader.close();

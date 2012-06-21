@@ -69,7 +69,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testNodes() {
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, false, false);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, RaspXmlGraphReader.NODES_TOKENS, false, false);
 			testNodes(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -106,7 +106,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testEdges() {
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, false, false);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, RaspXmlGraphReader.NODES_TOKENS, false, false);
 			testEdges(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -149,7 +149,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testMetadata(){
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, false, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, RaspXmlGraphReader.NODES_TOKENS, false, true);
 			testMetadata(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -225,7 +225,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testMultipleParses(){
 		try{
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, true, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, RaspXmlGraphReader.NODES_TOKENS, true, true);
 			testMultipleParses(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -250,7 +250,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testMultipleLemmas(){
 		try{
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, true, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(smallFile, RaspXmlGraphReader.NODES_TOKENS, true, true);
 			testMultipleLemmas(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -271,7 +271,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testReadLarge(){
 		try{
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(largeFile, true, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(largeFile, RaspXmlGraphReader.NODES_TOKENS, true, true);
 			testReadLarge(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -291,7 +291,7 @@ public class RaspXmlGraphReaderTest {
 	@Test
 	public void testReadDir(){
 		try{
-			RaspXmlGraphReader reader = new RaspXmlGraphReader(this.dir, true, true);
+			RaspXmlGraphReader reader = new RaspXmlGraphReader(this.dir, RaspXmlGraphReader.NODES_TOKENS, true, true);
 			testReadDir(reader);
 			reader.close();
 		} catch (GraphFormatException e) {

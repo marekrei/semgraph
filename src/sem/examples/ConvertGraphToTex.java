@@ -8,8 +8,8 @@ import sem.graphwriter.TikzDependencyGraphWriter;
 public class ConvertGraphToTex {
 	public static void main(String[] args) {
 		try {
-			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", false, false);
-			TikzDependencyGraphWriter writer = new TikzDependencyGraphWriter(TikzDependencyGraphWriter.THEME_SIMPLE, "examples/tikzdependency/file1.tex");
+			RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file2.xml", RaspXmlGraphReader.NODES_TOKENS, false, false);
+			TikzDependencyGraphWriter writer = new TikzDependencyGraphWriter(TikzDependencyGraphWriter.THEME_SIMPLE, "examples/tikzdependency/file2.tex");
 			while(reader.hasNext()){
 				Graph graph = reader.next();
 				writer.write(graph);
