@@ -90,13 +90,13 @@ Here is some example code for reading in graphs from the input file, printing ou
 You can run the  GraphVisualiser directly from the jar file:
 	GraphVisualiser <inputtype> <inputpath>
 For example:
-	java -cp semgraph.jar:lib/* sem.graphvis.GraphVisualiser raspxml examples/raspxml/file1.xml
+	java -cp semgraph.jar:lib/prefuse.jar sem.graphvis.GraphVisualiser raspxml examples/raspxml/file1.xml
 
 
-You can also convert some graphs to LaTeX format:
+You can also convert some graphs to LaTeX format using the jar:
 	ConvertGraphToTex <inputtype> <inputpath> <outputpath>
 For example:
-	java -cp semgraph.jar:lib/* sem.examples.ConvertGraphToTex raspxml examples/raspxml/file1.xml test.tex
+	java -cp semgraph.jar sem.examples.ConvertGraphToTex raspxml examples/raspxml/file1.xml test.tex
 
 
 Dependencies

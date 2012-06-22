@@ -38,7 +38,7 @@ import sem.util.XmlReader;
  * <li>NODES_ALL - Include all lemmas that RASP outputs for a given sentence. If the option of multiple POS tags is activated, this can result in multiple nodes that correspond to a single token.
  * <li>NODES_TOKENS - If a lemma is used in the edges of a graph, that's the one we include. Otherwise, if a token does not have any lemmas participating in the edges, add the first lemma of this token to the list of nodes. This should result in matching numbers of nodes and tokens.
  * </ul>
- * If the multiple tags option is not activated, both of these modes should give the same output.
+ * If the multiple tags option is not activated in RASP, both of these modes should give the same output.
  */
 public class RaspXmlGraphReader implements GraphReader{
 	private boolean getAllParses;
@@ -64,7 +64,7 @@ public class RaspXmlGraphReader implements GraphReader{
 	/**
 	 * Create a new reader for RASP XML.
 	 * @param inputPath		Path to the file or directory.
-	 * @param nodeSelectionMode		Set the way that nodes are added to the list of nodes in the graph.
+	 * @param nodeSelectionMode		Set the way that nodes are added to the list of nodes in the graph. NODES_ALL includes all lemmas that RASP outputs. NODES_TOKENS includes one lemma for each token in the sentence.
 	 * @param getAllParses	Whether to include alternative parses for each sentence (if available).
 	 * @param getMetaData	Whether to read metadata (sentence id and weighted grs).
 	 * @throws GraphFormatException 

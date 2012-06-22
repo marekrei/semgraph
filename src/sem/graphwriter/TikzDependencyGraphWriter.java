@@ -12,6 +12,7 @@ import sem.util.FileWriter;
  * 
  * <p>It uses the tikz-dependency, so make sure you have it installed when trying to convert the .tex into .pdf. You need to have a sufficiently up-to-date installation of tikz as well. The tikz-dependency documentation includes steps for installing them both.
  * <p>Sometimes the edges don't get positioned nicely, leading to overlapping edge labels. So take a look at the tikz-dependency documentation or the wiki example if you want to manually adjust the properties of the graph.
+ * <p>If you specify the option in the constructor, an alternative algorithm is used that tries to do custom positioning of edges. The results will vary depending on the graph. However, it only makes a difference when using the segmented edges; it has no effect on arc edges in the tikz-dependency library.
  * 
  * <p>Tikz : <a href="http://www.texample.net/tikz/">http://www.texample.net/tikz/</a>
  * <p>Tikz-dependency : <a href="http://sourceforge.net/projects/tikz-dependency/">http://sourceforge.net/projects/tikz-dependency/</a>
@@ -40,6 +41,11 @@ public class TikzDependencyGraphWriter implements GraphWriter{
 		this.repositionEdges = repositionEdges;
 	}
 	
+	/**
+	 * Escape special characters and make the String suitable for use in LaTeX.
+	 * @param input	Input String.
+	 * @return	Output String.
+	 */
 	public static String escapeLatex(String input){
 		String output = "";
 		for(int i = 0; i < input.length(); i++){
@@ -88,6 +94,13 @@ public class TikzDependencyGraphWriter implements GraphWriter{
 		return output;
 	}
 	
+	/** 
+	 * A custom algorithm for positioning the edge heights.
+	 * 
+	 * The default algorithm sets the edge heights only based on the distance of the two words. Here, we keep track of the number of edges over each word and set the heights so that they don't overlap. 
+	 * @param graph	Input graph.
+	 * @return	HashMap of custom edge heights.
+	 */
 	private HashMap<Edge,Double> calculateEdgeHeights(Graph graph){
 		double constant = 3.0;
 		
