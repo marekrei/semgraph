@@ -24,7 +24,7 @@ The library includes a visualiser which creates a dynamic view of the graphs. An
 
 ![](http://www.marekrei.com/img/semgraph_graphvisualiser_screenshot.png "The graph visualiser")
 
-![](http://www.marekrei.com/img/semgraph_latex2.png "LaTeX representation")
+![](http://www.marekrei.com/img/semgraph_latex3.png "LaTeX representation")
 
 Supported formats
 -----------------
