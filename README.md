@@ -65,27 +65,40 @@ Take a look at the classes in the sem.examples package for an idea of how to use
 
 Here is some example code for reading in graphs from the input file, printing out information about their nodes and edges, and running the visualiser.
 
-	// Open the reader
-	RaspXmlGraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", false, false);
-	// Create a list for storing the graphs
-	ArrayList<Graph> graphs = new ArrayList<Graph>();
-	// Iterate over graphs
-	while(reader.hasNext()){ 
-		Graph graph = reader.next();
-		// Iterate over nodes
-		for(Node node : graph.getNodes()) 
-			System.out.println("NODE: " + node.getLemma() + " " + node.getPos());
-		// Iterate over edges
-		for(Edge edge : graph.getEdges()) 
-			System.out.println("EDGE: " + edge.getLabel() + " " + edge.getHead().getLemma() + " " + edge.getDep().getLemma());
-		graphs.add(graph);
-		System.out.println();
+
+	try {
+		// Open the reader
+		GraphReader reader = new RaspXmlGraphReader("examples/raspxml/file1.xml", RaspXmlGraphReader.NODES_TOKENS, false, false);
+		
+		// Create a list for storing the graphs
+		ArrayList<Graph> graphs = new ArrayList<Graph>();
+		
+		// Iterate over graphs
+		while(reader.hasNext()){ 
+			Graph graph = reader.next();
+			graphs.add(graph);
+
+			// Iterate over nodes
+			for(Node node : graph.getNodes()) 
+				System.out.println("NODE: " + node.getLemma() + " " + node.getPos());
+
+			// Iterate over edges
+			for(Edge edge : graph.getEdges()) 
+				System.out.println("EDGE: " + edge.getLabel() + " " + edge.getHead().getLemma() + " " + edge.getDep().getLemma());
+
+			System.out.println();
+		}
+		
+		// Close the reader
+		reader.close();
+		
+		// Run the visualiser
+		GraphVisualiser graphVisualiser = new GraphVisualiser(false);
+		graphVisualiser.displayGraphs(graphs);
+	} catch (GraphFormatException e) {
+		e.printStackTrace();
 	}
-	// Close the reader
-	reader.close();
-	// Run the visualiser
-	GraphVisualiser graphVisualiser = new GraphVisualiser(false);
-	graphVisualiser.displayGraphs(graphs);
+
 
 
 You can run the  GraphVisualiser directly from the jar file:
