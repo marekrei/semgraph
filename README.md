@@ -5,7 +5,7 @@ Author:		Marek Rei (marek@marekrei.com)
 
 Version:	0.2
 
-Updated:	2012-06-20
+Updated:	2012-06-21
 
 Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
@@ -16,11 +16,11 @@ Documentation:	<http://www.marekrei.com/doc/semgraph/>
 About
 -----
 
-SemGraph is a Java library for reading, writing and visualising graphs, mostly meant for dependency graphs of sentences.
+SemGraph is a Java library for reading, writing and visualising graphs in different formats, mostly meant for dependency graphs of sentences.
 After parsing a large corpus of text, this can be used to conveniently iterate over sentences to collect features, build vector space models or analyse the parser output.
 It is designed so that the underlying parser can be easily changed without affecting the rest of the implementation.
-The visualiser creates a dynamic view of the graphs. An experimental feature can be enabled to also edit the graphs using the visualiser (e.g., correcting parses).
 
+The library includes a visualiser which creates a dynamic view of the graphs. An experimental feature can be enabled to also edit the graphs (e.g., correcting parses) using that interface.
 
 ![](http://www.marekrei.com/img/semgraph_graphvisualiser_screenshot.png "The graph visualiser")
 
@@ -28,8 +28,6 @@ The visualiser creates a dynamic view of the graphs. An experimental feature can
 
 Supported formats
 -----------------
-
-Also, the graphs can be
 Currently, the following input formats are supported:
 
 * rasp - The default output from the RASP parser <http://ilexir.co.uk/2011/open-source-rasp-release/>
@@ -65,12 +63,6 @@ Usage
 Download the jar file and include it in your class path. The readers for different file formats are in the sem.graphreader package. They can take as input a single file or a whole directory. The files can be plain text or gzipped. The visualiser is in sem.graphvis.GraphVisualiser.
 Take a look at the classes in the sem.examples package for an idea of how to use the readers and the visualiser.
 
-The Prefuse library needs to be included for the visualisation: <http://prefuse.org/>
-
-The JUnit library needs to be included for the unit tests: <http://junit.sourceforge.net/>
-
-Tikz-dependency library is needed to convert the LaTeX representation to pdf: <http://sourceforge.net/projects/tikz-dependency/>
-
 Here is some example code for reading in graphs from the input file, printing out information about their nodes and edges, and running the visualiser.
 
 	// Open the reader
@@ -95,12 +87,36 @@ Here is some example code for reading in graphs from the input file, printing ou
 	GraphVisualiser graphVisualiser = new GraphVisualiser(false);
 	graphVisualiser.displayGraphs(graphs);
 
+You can run the  GraphVisualiser directly from the jar file:
+	GraphVisualiser <inputtype> <inputpath>
+For example:
+	java -cp semgraph.jar:lib/* sem.graphvis.GraphVisualiser raspxml examples/raspxml/file1.xml
+
+
+You can also convert some graphs to LaTeX format:
+	ConvertGraphToTex <inputtype> <inputpath> <outputpath>
+For example:
+	java -cp semgraph.jar:lib/* sem.examples.ConvertGraphToTex raspxml examples/raspxml/file1.xml test.tex
+
+
+Dependencies
+------------
+
+The Prefuse library needs to be included in your Java class path for the visualisation: <http://prefuse.org/>
+
+The JUnit library needs to be included for the unit tests: <http://junit.sourceforge.net/>
+
+Tikz-dependency library is needed to convert the LaTeX representation to pdf: <http://sourceforge.net/projects/tikz-dependency/>
+
+Tikz is needed to run tikz-dependency: http://www.texample.net/tikz/
+
+You might have tikz already installed on your system. But if you get weird errors, try updating it. The tikz-dependency documentation describes how to install both of the libraries.
 
 Changes
 -------
 
 **0.2**
-* Added support for writing graphs to LaTeX, using the tikz-dependency library.
+* Added support for writing graphs in LaTeX, using the tikz-dependency library.
 * Added the option to specify how nodes are created in the RaspXmlGraphReader (either based on lemmas or tokens).
 
 **0.1**

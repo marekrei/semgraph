@@ -4,9 +4,17 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import sem.test.graph.*;
-import sem.test.tokeniser.*;
-import sem.test.graphreader.*;
+import sem.test.graph.GraphTest;
+import sem.test.graphreader.CnCGraphReaderTest;
+import sem.test.graphreader.ParsevalGraphReaderTest;
+import sem.test.graphreader.RaspGraphReaderTest;
+import sem.test.graphreader.RaspXmlGraphReaderTest;
+import sem.test.graphreader.TSVGraphReaderTest;
+import sem.test.tokeniser.TokeniserTest;
+import sem.test.util.FileReaderTest;
+import sem.test.util.FileWriterTest;
+import sem.test.util.ToolsTest;
+import sem.test.util.XmlReaderTest;
 
 
 @RunWith(Suite.class)
@@ -16,7 +24,11 @@ import sem.test.graphreader.*;
 				RaspGraphReaderTest.class,
 				ParsevalGraphReaderTest.class,
 				CnCGraphReaderTest.class,
-				TSVGraphReaderTest.class
+				TSVGraphReaderTest.class,
+				FileReaderTest.class,
+				FileWriterTest.class,
+				ToolsTest.class,
+				XmlReaderTest.class
 				})
 
 public class AllTests {

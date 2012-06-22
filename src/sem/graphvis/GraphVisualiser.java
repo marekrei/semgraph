@@ -44,6 +44,13 @@ import prefuse.visual.expression.InGroupPredicate;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
+import sem.graphreader.CnCGraphReader;
+import sem.graphreader.GraphFormatException;
+import sem.graphreader.GraphReader;
+import sem.graphreader.ParsevalGraphReader;
+import sem.graphreader.RaspGraphReader;
+import sem.graphreader.RaspXmlGraphReader;
+import sem.graphreader.TSVGraphReader;
 import sem.graphwriter.GraphWriter;
 import sem.graphwriter.TSVGraphWriter;
 import sem.util.Tools;
@@ -475,5 +482,36 @@ public class GraphVisualiser {
 		this.sentences = sentences;
 		this.createWindow();
 		this.resetGraph();
+	}
+	
+	public static void main(String[] args){
+		try {
+			GraphReader reader = null;
+			if(args.length == 2){
+				if(args[0].equalsIgnoreCase("rasp"))
+					reader = new RaspGraphReader(args[1], true);
+				else if(args[0].equalsIgnoreCase("raspxml"))
+					reader = new RaspXmlGraphReader(args[1], RaspXmlGraphReader.NODES_TOKENS, true, false);
+				else if(args[0].equalsIgnoreCase("cnc"))
+					reader = new CnCGraphReader(args[1]);
+				else if(args[0].equalsIgnoreCase("parseval"))
+					reader = new ParsevalGraphReader(args[1]);
+				else if(args[0].equalsIgnoreCase("tsv"))
+					reader = new TSVGraphReader(args[1], true);
+			}
+			if(reader == null){
+				System.out.println("Usage: GraphVisualiser <inputtype> <inputpath>");
+				System.exit(1);
+			}
+			
+			ArrayList<ArrayList<Graph>> sentences = new ArrayList<ArrayList<Graph>>();
+			while(reader.hasNext())
+				sentences.add(reader.nextSentence());
+			reader.close();
+			GraphVisualiser visualiser = new GraphVisualiser(false);
+			visualiser.displaySentences(sentences);
+		} catch (GraphFormatException e) {
+			e.printStackTrace();
+		}
 	}
 }

@@ -7,73 +7,73 @@
 \PreviewEnvironment{dependency}
 \begin{document}
 % ---------------- GRAPH 1
-\begin{dependency}[theme = simple]
+\begin{dependency}[segmented edge, text only label, label style={scale=1.3, above}]
 \begin{deptext}[column sep=1em]
 Research \& into \& modern \& statistical \& NLP \& algorithm \& require \& an \& understanding \& of \& a \& number \& of \& disparate \& field \& , \& include \& linguistics \& , \& computer \& science \& , \& and \& statistics \& . \\
 NN1 \& II \& JJ \& JJ \& NP1 \& NN2 \& VVZ \& AT1 \& NN1 \& IO \& AT1 \& NN1 \& IO \& JJ \& NNL2 \& , \& VVG \& NN1 \& , \& NN1 \& NN1 \& , \& CC \& NN \& . \\
 \end{deptext}
-\depedge{7}{17}{xmod} % (xmod require_VVZ include_VVG)
-\depedge{17}{23}{dobj} % (dobj include_VVG and_CC)
-\depedge{23}{18}{conj} % (conj and_CC linguistics_NN1)
-\depedge{23}{21}{conj} % (conj and_CC science_NN1)
-\depedge{23}{24}{conj} % (conj and_CC statistics_NN)
-\depedge{21}{20}{ncmod} % (ncmod science_NN1 computer_NN1)
-\depedge{7}{1}{ncsubj} % (ncsubj require_VVZ Research_NN1)
-\depedge{7}{9}{dobj} % (dobj require_VVZ understanding_NN1)
-\depedge{9}{8}{det} % (det understanding_NN1 an_AT1)
-\depedge{9}{10}{iobj} % (iobj understanding_NN1 of_IO)
-\depedge{10}{12}{dobj} % (dobj of_IO number_NN1)
-\depedge{12}{11}{det} % (det number_NN1 a_AT1)
-\depedge{12}{13}{iobj} % (iobj number_NN1 of_IO)
-\depedge{13}{15}{dobj} % (dobj of_IO field_NNL2)
-\depedge{15}{14}{ncmod} % (ncmod field_NNL2 disparate_JJ)
-\depedge{1}{2}{ncmod} % (ncmod Research_NN1 into_II)
-\depedge{2}{6}{dobj} % (dobj into_II algorithm_NN2)
-\depedge{6}{3}{ncmod} % (ncmod algorithm_NN2 modern_JJ)
-\depedge{6}{4}{ncmod} % (ncmod algorithm_NN2 statistical_JJ)
-\depedge{6}{5}{ncmod} % (ncmod algorithm_NN2 NLP_NP1)
+\depedge[edge unit distance=0.9ex]{7}{17}{xmod} % (xmod require_VVZ include_VVG)
+\depedge[edge unit distance=1.5ex]{17}{23}{dobj} % (dobj include_VVG and_CC)
+\depedge[edge unit distance=1.2ex]{23}{18}{conj} % (conj and_CC linguistics_NN1)
+\depedge[edge unit distance=1.5ex]{23}{21}{conj} % (conj and_CC science_NN1)
+\depedge[edge unit distance=3.0ex]{23}{24}{conj} % (conj and_CC statistics_NN)
+\depedge[edge unit distance=3.0ex]{21}{20}{ncmod} % (ncmod science_NN1 computer_NN1)
+\depedge[edge unit distance=2.5ex]{7}{1}{ncsubj} % (ncsubj require_VVZ Research_NN1)
+\depedge[edge unit distance=3.0ex]{7}{9}{dobj} % (dobj require_VVZ understanding_NN1)
+\depedge[edge unit distance=3.0ex]{9}{8}{det} % (det understanding_NN1 an_AT1)
+\depedge[edge unit distance=3.0ex]{9}{10}{iobj} % (iobj understanding_NN1 of_IO)
+\depedge[edge unit distance=3.0ex]{10}{12}{dobj} % (dobj of_IO number_NN1)
+\depedge[edge unit distance=3.0ex]{12}{11}{det} % (det number_NN1 a_AT1)
+\depedge[edge unit distance=3.0ex]{12}{13}{iobj} % (iobj number_NN1 of_IO)
+\depedge[edge unit distance=3.0ex]{13}{15}{dobj} % (dobj of_IO field_NNL2)
+\depedge[edge unit distance=3.0ex]{15}{14}{ncmod} % (ncmod field_NNL2 disparate_JJ)
+\depedge[edge unit distance=3.0ex]{1}{2}{ncmod} % (ncmod Research_NN1 into_II)
+\depedge[edge unit distance=3.0ex]{2}{6}{dobj} % (dobj into_II algorithm_NN2)
+\depedge[edge unit distance=3.0ex]{6}{3}{ncmod} % (ncmod algorithm_NN2 modern_JJ)
+\depedge[edge unit distance=3.0ex]{6}{4}{ncmod} % (ncmod algorithm_NN2 statistical_JJ)
+\depedge[edge unit distance=3.0ex]{6}{5}{ncmod} % (ncmod algorithm_NN2 NLP_NP1)
 \end{dependency}
 
 % ---------------- GRAPH 2
-\begin{dependency}[theme = simple]
+\begin{dependency}[segmented edge, text only label, label style={scale=1.3, above}]
 \begin{deptext}[column sep=1em]
 Natural \& language \& processing \& be \& a \& field \& of \& computer \& science \& and \& linguistics \& . \\
 JJ \& NN1 \& NN1 \& VBZ \& AT1 \& NN1 \& IO \& NN1 \& NN1 \& CC \& NN1 \& . \\
 \end{deptext}
-\depedge{4}{3}{ncsubj} % (ncsubj be_VBZ processing_NN1)
-\depedge{4}{6}{xcomp} % (xcomp be_VBZ field_NN1)
-\depedge{6}{5}{det} % (det field_NN1 a_AT1)
-\depedge{6}{7}{iobj} % (iobj field_NN1 of_IO)
-\depedge{7}{10}{dobj} % (dobj of_IO and_CC)
-\depedge{10}{8}{ncmod} % (ncmod and_CC computer_NN1)
-\depedge{10}{9}{conj} % (conj and_CC science_NN1)
-\depedge{10}{11}{conj} % (conj and_CC linguistics_NN1)
-\depedge{3}{1}{ncmod} % (ncmod processing_NN1 Natural_JJ)
-\depedge{3}{2}{ncmod} % (ncmod processing_NN1 language_NN1)
+\depedge[edge unit distance=3.0ex]{4}{3}{ncsubj} % (ncsubj be_VBZ processing_NN1)
+\depedge[edge unit distance=3.0ex]{4}{6}{xcomp} % (xcomp be_VBZ field_NN1)
+\depedge[edge unit distance=3.0ex]{6}{5}{det} % (det field_NN1 a_AT1)
+\depedge[edge unit distance=3.0ex]{6}{7}{iobj} % (iobj field_NN1 of_IO)
+\depedge[edge unit distance=3.0ex]{7}{10}{dobj} % (dobj of_IO and_CC)
+\depedge[edge unit distance=3.0ex]{10}{8}{ncmod} % (ncmod and_CC computer_NN1)
+\depedge[edge unit distance=3.0ex]{10}{9}{conj} % (conj and_CC science_NN1)
+\depedge[edge unit distance=3.0ex]{10}{11}{conj} % (conj and_CC linguistics_NN1)
+\depedge[edge unit distance=3.0ex]{3}{1}{ncmod} % (ncmod processing_NN1 Natural_JJ)
+\depedge[edge unit distance=3.0ex]{3}{2}{ncmod} % (ncmod processing_NN1 language_NN1)
 \end{dependency}
 
 % ---------------- GRAPH 3
-\begin{dependency}[theme = simple]
+\begin{dependency}[segmented edge, text only label, label style={scale=1.3, above}]
 \begin{deptext}[column sep=1em]
 Modern \& natural \& language \& processing \& algorithm \& be \& ground \& in \& machine \& learn \& , \& especially \& statistical \& machine \& learn \& . \& {[}{[}null{]}{]} \\
 JJ \& JJ \& NN1 \& NN1 \& NN2 \& VBR \& VVN \& II \& NN1 \& VVG \& , \& RR \& JJ \& NN1 \& VVG \& . \& {[}{[}nullpos{]}{]} \\
 \end{deptext}
-\depedge{7}{5}{ncsubj} % (ncsubj ground_VVN algorithm_NN2)
-\depedge{7}{6}{aux} % (aux ground_VVN be_VBR)
-\depedge{7}{17}{passive} % (passive ground_VVN [[null]]_[[nullpos]])
-\depedge{7}{8}{iobj} % (iobj ground_VVN in_II)
-\depedge{8}{14}{dobj} % (dobj in_II machine_NN1)
-\depedge{10}{9}{dobj} % (dobj learn_VVG machine_NN1)
-\depedge{10}{14}{ncsubj} % (ncsubj learn_VVG machine_NN1)
-\depedge{14}{10}{ncmod} % (ncmod machine_NN1 learn_VVG)
-\depedge{14}{13}{ncmod} % (ncmod machine_NN1 statistical_JJ)
-\depedge{15}{14}{ncsubj} % (ncsubj learn_VVG machine_NN1)
-\depedge{14}{15}{xmod} % (xmod machine_NN1 learn_VVG)
-\depedge{13}{12}{ncmod} % (ncmod statistical_JJ especially_RR)
-\depedge{5}{1}{ncmod} % (ncmod algorithm_NN2 Modern_JJ)
-\depedge{5}{2}{ncmod} % (ncmod algorithm_NN2 natural_JJ)
-\depedge{5}{3}{ncmod} % (ncmod algorithm_NN2 language_NN1)
-\depedge{5}{4}{ncmod} % (ncmod algorithm_NN2 processing_NN1)
+\depedge[edge unit distance=3.0ex]{7}{5}{ncsubj} % (ncsubj ground_VVN algorithm_NN2)
+\depedge[edge unit distance=3.0ex]{7}{6}{aux} % (aux ground_VVN be_VBR)
+\depedge[edge unit distance=1.5ex]{7}{17}{passive} % (passive ground_VVN [[null]]_[[nullpos]])
+\depedge[edge unit distance=3.0ex]{7}{8}{iobj} % (iobj ground_VVN in_II)
+\depedge[edge unit distance=2.0ex]{8}{14}{dobj} % (dobj in_II machine_NN1)
+\depedge[edge unit distance=3.0ex]{10}{9}{dobj} % (dobj learn_VVG machine_NN1)
+\depedge[edge unit distance=1.5ex]{10}{14}{ncsubj} % (ncsubj learn_VVG machine_NN1)
+\depedge[edge unit distance=2.25ex]{14}{10}{ncmod} % (ncmod machine_NN1 learn_VVG)
+\depedge[edge unit distance=3.0ex]{14}{13}{ncmod} % (ncmod machine_NN1 statistical_JJ)
+\depedge[edge unit distance=3.0ex]{15}{14}{ncsubj} % (ncsubj learn_VVG machine_NN1)
+\depedge[edge unit distance=6.0ex]{14}{15}{xmod} % (xmod machine_NN1 learn_VVG)
+\depedge[edge unit distance=3.0ex]{13}{12}{ncmod} % (ncmod statistical_JJ especially_RR)
+\depedge[edge unit distance=3.0ex]{5}{1}{ncmod} % (ncmod algorithm_NN2 Modern_JJ)
+\depedge[edge unit distance=3.0ex]{5}{2}{ncmod} % (ncmod algorithm_NN2 natural_JJ)
+\depedge[edge unit distance=3.0ex]{5}{3}{ncmod} % (ncmod algorithm_NN2 language_NN1)
+\depedge[edge unit distance=3.0ex]{5}{4}{ncmod} % (ncmod algorithm_NN2 processing_NN1)
 \end{dependency}
 
 \end{document}
