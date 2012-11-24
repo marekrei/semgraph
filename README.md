@@ -5,7 +5,7 @@ Author:		Marek Rei (marek@marekrei.com)
 
 Version:	0.3
 
-Updated:	2012-11-19
+Updated:	2012-11-24
 
 Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
