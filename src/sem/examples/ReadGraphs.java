@@ -1,19 +1,16 @@
 package sem.examples;
 
-import java.util.ArrayList;
-
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.RaspXmlGraphReader;
-import sem.graphvis.GraphVisualiser;
 
 /**
  * Example class.
  * Shows how to iterate over graphs and print out some information.
  */
-public class ReadGraph {
+public class ReadGraphs {
 
 	public static void main(String[] args) {
 		try {

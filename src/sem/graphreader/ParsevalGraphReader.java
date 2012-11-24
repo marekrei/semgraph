@@ -2,7 +2,9 @@ package sem.graphreader;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
@@ -24,20 +26,60 @@ public class ParsevalGraphReader implements GraphReader{
 	private FileReader reader;
 	private Graph nextGraph;
 	private String ellipLemma = "ellip";
+	private boolean simpleEdgeFormat;
+	private boolean simpleNodeFormat;
 	
-	public ParsevalGraphReader(String inputPath) throws GraphFormatException{
+	/**
+	 * GraphReader for the Parseval format.
+	 * The default (full) format represents nodes as lemma+suffix:id_POS or lemma+suffix:id, e.g. algorithm+s:6_NOUN or algorithm+s:6_NOUN
+	 * The simple format has each node containing only the label/lemma, e.g. algorithms. We can also enable this if we want to force all the extra information to be retained in the node label.
+	 * @param inputPath
+	 * @param simpleFormat 		Enable simple node format
+	 * @throws GraphFormatException
+	 */
+	public ParsevalGraphReader(String inputPath, boolean simpleEdgeFormat, boolean simpleNodeFormat) throws GraphFormatException{
 		this.reader = new FileReader(inputPath, "\n");
 		this.nextGraph = null;
+		this.simpleEdgeFormat = simpleEdgeFormat;
+		this.simpleNodeFormat = simpleNodeFormat;
 		this.next();
+	}
+	
+	private Node createNode(String label, ArrayList<Node> nodes) throws GraphFormatException{
+		
+		Node node;
+		int nodeId;
+		if(this.simpleNodeFormat){
+			node = new Node(label, "POS");
+		}
+		else {
+			LinkedHashMap<String,String> nodeInfo = RaspGraphReader.parseLabel(label);
+			if(nodeInfo.get("index") == null || nodeInfo.get("index").trim().length() == 0){
+				node = new Node(nodeInfo.get("lemma"), ((nodeInfo.get("pos")==null)?"POS":nodeInfo.get("pos")));
+			}
+			else {
+				nodeId = Tools.getInt(nodeInfo.get("index"), -1)-1;
+				if(nodeId < 0)
+					throw new GraphFormatException("Head ID is negative.", label);
+				while(nodes.size() <= nodeId)
+					nodes.add(null);
+				if(nodes.get(nodeId) == null){
+					nodes.remove(nodeId);
+					node = new Node(nodeInfo.get("lemma"), ((nodeInfo.get("pos")==null)?"POS":nodeInfo.get("pos")));
+					nodes.add(nodeId, node);
+				}
+				else
+					node = nodes.get(nodeId);
+			}
+		}
+		return node;
 	}
 	
 	private Graph readNextGraph() throws GraphFormatException{
 		String line, metaData = "", type;
 		Graph graph = null;
 		String[] attributes;
-		ArrayList<String> headInfo, depInfo;
 		Node head, dep;
-		int headId, depId;
 		
 		while (reader.hasNext()) {
 			line = reader.next().trim();
@@ -54,72 +96,32 @@ public class ParsevalGraphReader implements GraphReader{
 				graph = new Graph();
 			
 			if(line.startsWith("(")){
-				if(line.length() >= 2 && line.charAt(0) == '(' && line.charAt(line.length()-1) == ')')
-					line = line.substring(1, line.length()-1);
-				attributes = line.split("\\s+");
-				type = attributes[0];
-				
-				if(RaspGraphReader.grsWithSubtype.contains(type) && attributes.length > 3){
-					attributes[1] = attributes[2];
-					attributes[2] = attributes[3];
-				}
+				LinkedHashMap<String,String> grInfo = RaspGraphReader.parseGr(line, this.simpleEdgeFormat);
 				
 				// Resolving the head
 				head = null;
-				if(attributes[1].equals(ellipLemma)){
+				if(grInfo.get("head").equals(ellipLemma)){
 					head = Graph.ellip.clone();
 				}
 				else{
-					headInfo = RaspGraphReader.parseLabel(attributes[1]);
-					if(headInfo.get(2) == null){
-						head = new Node(headInfo.get(0), headInfo.get(3));
-					}
-					else {
-						headId = Tools.getInt(headInfo.get(2), -1)-1;
-						if(headId < 0)
-							throw new GraphFormatException("Head ID is negative.", line);
-						while(graph.getNodes().size() <= headId)
-							graph.getNodes().add(null);
-						if(graph.getNodes().get(headId) == null){
-							graph.getNodes().remove(headId);
-							head = new Node(headInfo.get(0), headInfo.get(3));
-							graph.getNodes().add(headId, head);
-						}
-						else
-							head = graph.getNodes().get(headId);
-					}
+					head = createNode(grInfo.get("head"), graph.getNodes());
 				}
 				
 				// Resolving the dependent
 				dep = null;
-				if(attributes.length < 3){
+				if(grInfo.get("type").equals("passive"))
 					dep = Graph.nil.clone();
-				}
-				else {
-					depInfo = RaspGraphReader.parseLabel(attributes[2]);
-					if(depInfo.get(2) == null){
-						dep = new Node(depInfo.get(0), depInfo.get(3));
-					}
-					else {
-						depId = Tools.getInt(depInfo.get(2), -1)-1;
-						if(depId < 0)
-							throw new GraphFormatException("Dependent ID is negative.", line);
-						while(graph.getNodes().size() <= depId)
-							graph.getNodes().add(null);
-						if(graph.getNodes().get(depId) == null){
-							graph.getNodes().remove(depId);
-							dep = new Node(depInfo.get(0), depInfo.get(3));
-							graph.getNodes().add(depId, dep);
-						}
-						else
-							dep = graph.getNodes().get(depId);
-					}
-				}
+				else if(grInfo.get("dependent") == null)
+					throw new GraphFormatException("Dependent is null.", line);
+				else
+					dep = createNode(grInfo.get("dependent"), graph.getNodes());
 
-				if(head == null || dep == null)
-					throw new GraphFormatException("Unable to head or dependent.", line);
+				if(head == null)
+					throw new GraphFormatException("Unable to resolve head.", line);
+				if(dep == null)
+					throw new GraphFormatException("Unable to resolve dependent.", line);
 				
-				graph.addEdge(type, head, dep);
+				graph.addEdge(grInfo.get("type"), head, dep);
 			}
 			else {
 				metaData += line + "\n";
@@ -142,7 +144,7 @@ public class ParsevalGraphReader implements GraphReader{
 				if(!graph.getNodes().contains(edge.getDep()))
 					graph.addNode(edge.getDep());
 			}
-			graph.putMetadata("data", metaData.trim());
+			graph.putMetadata("text", metaData.trim());
 		}
 		return graph;
 	}
@@ -205,7 +207,7 @@ public class ParsevalGraphReader implements GraphReader{
 
 	public static void main(String[] args){
 		try {
-			ParsevalGraphReader reader = new ParsevalGraphReader("examples/parseval/file1.parseval");
+			ParsevalGraphReader reader = new ParsevalGraphReader("examples/parseval/file1.parseval", false, true);
 			
 			while(reader.hasNext()){
 				reader.next().print();

@@ -31,6 +31,6 @@ import sem.test.util.XmlReaderTest;
 				XmlReaderTest.class
 				})
 
-public class AllTests {
+public class SemGraphTests {
 
 }

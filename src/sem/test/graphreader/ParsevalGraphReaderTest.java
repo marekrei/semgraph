@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Graph;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.ParsevalGraphReader;
 
 public class ParsevalGraphReaderTest {
@@ -20,7 +20,7 @@ public class ParsevalGraphReaderTest {
 	@Test
 	public void testEdges() {
 		try {
-			ParsevalGraphReader reader = new ParsevalGraphReader(smallFile);
+			ParsevalGraphReader reader = new ParsevalGraphReader(smallFile, false, false);
 			// Let's take the second graph, to be sure that there is nothing carried over from the first one.
 			reader.next();
 			Graph graph = reader.next();
@@ -53,7 +53,7 @@ public class ParsevalGraphReaderTest {
 	@Test
 	public void testReadLarge(){
 		try{
-			ParsevalGraphReader reader = new ParsevalGraphReader(largeFile);
+			ParsevalGraphReader reader = new ParsevalGraphReader(largeFile, false, false);
 			RaspXmlGraphReaderTest.testReadLarge(reader);
 			reader.close();
 		} catch (GraphFormatException e) {
@@ -64,7 +64,7 @@ public class ParsevalGraphReaderTest {
 	@Test
 	public void testReadDir(){
 		try{
-			ParsevalGraphReader reader = new ParsevalGraphReader(this.dir);
+			ParsevalGraphReader reader = new ParsevalGraphReader(this.dir, false, false);
 			int graphCount = 0;
 			while(reader.hasNext()){
 				reader.next();

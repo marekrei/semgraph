@@ -82,8 +82,7 @@ public class FileReader{
 		
 		File input = new File(inputPath);
 		if(!input.exists()){
-			System.err.println("Error: Input path for FileReader is invalid: " + inputPath);
-			System.exit(1);
+			throw new RuntimeException("Input path for FileReader is invalid: " + inputPath);
 		}
 		
 		this.inputFiles.addAll(listFileRec(input));

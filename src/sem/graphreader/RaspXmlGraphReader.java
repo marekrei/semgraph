@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
@@ -90,7 +91,7 @@ public class RaspXmlGraphReader implements GraphReader{
 	 * @param nodeMap
 	 * @return
 	 */
-	private ArrayList<Node> selectNodes(int nodeSelectionMode, LinkedHashMap<Integer,Node> lemmas, HashMap<Node,Integer> wordIds, HashMap<Node, Node> nodeMap){
+	private ArrayList<Node> selectNodes(int nodeSelectionMode, LinkedHashMap<Integer,Node> lemmas, LinkedHashMap<Node,Integer> wordIds, LinkedHashMap<Node, Node> nodeMap){
 		ArrayList<Node> selectedNodes = new ArrayList<Node>();
 		
 		if(nodeSelectionMode == RaspXmlGraphReader.NODES_ALL){
@@ -102,7 +103,7 @@ public class RaspXmlGraphReader implements GraphReader{
 			}
 		}
 		else if(nodeSelectionMode == RaspXmlGraphReader.NODES_TOKENS){
-			HashMap<Integer,ArrayList<Node>> wordMap = new HashMap<Integer,ArrayList<Node>>();
+			LinkedHashMap<Integer,ArrayList<Node>> wordMap = new LinkedHashMap<Integer,ArrayList<Node>>();
 			int maxWordNum = -1;
 			for(Entry<Node,Integer> e : wordIds.entrySet()){
 				if(!wordMap.containsKey(e.getValue()))
@@ -187,12 +188,13 @@ public class RaspXmlGraphReader implements GraphReader{
 		
 		
 		LinkedHashMap<Integer,Node> lemmas = new LinkedHashMap<Integer,Node>();
-		HashMap<Node,Integer> wordIds = new HashMap<Node,Integer>();
+		LinkedHashMap<Node,Integer> wordIds = new LinkedHashMap<Node,Integer>();
 		ArrayList<Edge> tempEdges = new ArrayList<Edge>();
 		
 		int lemmaId, wordId, grHeadId, grDepId;
 		String tag, lemma, pos, lemmaNum, wordNum, grType, grHead, grDep, grWeight, grWeightsPart = "", grWeights = "";
 		Node headNode, depNode;
+		boolean xparse = false;
 		
 		while (xmlReader.hasNext()) {
 			xmlReader.next();
@@ -226,7 +228,7 @@ public class RaspXmlGraphReader implements GraphReader{
 						throw new GraphFormatException("Forbidden value for word number. ", wordNum);
 					
 					if(lemmas.containsKey(lemmaId))
-						throw new GraphFormatException("Duplicate index values for lemmas.", "" + lemmaId);
+						throw new GraphFormatException("Duplicate index values for lemmas.", "" + lemma + ":" + lemmaNum + "_" + pos);
 					Node node = new Node(lemma, pos);
 					lemmas.put(new Integer(lemmaId), node);
 					wordIds.put(node, new Integer(wordId));
@@ -297,17 +299,20 @@ public class RaspXmlGraphReader implements GraphReader{
 					}
 				}
 				
+				else if(tag.equals("xparse"))
+					xparse = true;
+				
 			}
 			else if(xmlReader.isEndElement()){
 				tag = xmlReader.getLocalName();
 				domPath.remove(domPath.size()-1);
 				
-				if(tag.equals("gr-list")){
+				if(tag.equals("gr-list") || tag.equals("xparse")){
 					Graph graph = new Graph();
 					graphs.add(graph);
 					// Adding edges to the graph
 					// Making clones of all the nodes so that they can be operated on independently.
-					HashMap<Node, Node> nodeMap = new HashMap<Node, Node>();
+					LinkedHashMap<Node, Node> nodeMap = new LinkedHashMap<Node, Node>();
 					for(Edge edge : tempEdges){
 						if(!nodeMap.containsKey(edge.getHead()))
 							nodeMap.put(edge.getHead(), edge.getHead().clone());
@@ -317,6 +322,7 @@ public class RaspXmlGraphReader implements GraphReader{
 					}
 					
 					graph.getNodes().addAll(selectNodes(this.nodeSelectionMode, lemmas, wordIds, nodeMap));
+					tempEdges.clear();
 				}
 				
 				else if(tag.equals("sentence")){
@@ -329,6 +335,7 @@ public class RaspXmlGraphReader implements GraphReader{
 			for(Graph g : graphs){
 				g.putMetadata("sentenceId", ""+sentenceCount);
 				g.putMetadata("weightedGrs", grWeights.trim());
+				g.putMetadata("xparse", xparse?"true":"false");
 			}
 		}
 

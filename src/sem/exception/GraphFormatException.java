@@ -1,4 +1,4 @@
-package sem.graphreader;
+package sem.exception;
 
 /**
  * Exception for unexpected errors when reading in the graph.
@@ -15,7 +15,7 @@ public class GraphFormatException extends Exception{
     }
 	
 	public GraphFormatException(String message, String line) {
-        super(message);
+        super(message + " : " + line);
         this.message = message;
         this.line = line;
     }

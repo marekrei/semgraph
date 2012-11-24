@@ -41,11 +41,11 @@ import prefuse.util.PrefuseLib;
 import prefuse.util.force.SpringForce;
 import prefuse.visual.VisualItem;
 import prefuse.visual.expression.InGroupPredicate;
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
 import sem.graphreader.CnCGraphReader;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.GraphReader;
 import sem.graphreader.ParsevalGraphReader;
 import sem.graphreader.RaspGraphReader;
@@ -484,6 +484,9 @@ public class GraphVisualiser {
 		this.resetGraph();
 	}
 	
+	/**
+	 * This is a redundant function. Do not use. For reference only.
+	 */
 	public static void main(String[] args){
 		try {
 			GraphReader reader = null;
@@ -495,7 +498,7 @@ public class GraphVisualiser {
 				else if(args[0].equalsIgnoreCase("cnc"))
 					reader = new CnCGraphReader(args[1]);
 				else if(args[0].equalsIgnoreCase("parseval"))
-					reader = new ParsevalGraphReader(args[1]);
+					reader = new ParsevalGraphReader(args[1], false, false);
 				else if(args[0].equalsIgnoreCase("tsv"))
 					reader = new TSVGraphReader(args[1], true);
 			}

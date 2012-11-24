@@ -7,9 +7,9 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Graph;
 import sem.graphreader.CnCGraphReader;
-import sem.graphreader.GraphFormatException;
 
 public class CnCGraphReaderTest {
 	

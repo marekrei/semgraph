@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Graph;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.RaspGraphReader;
 
 public class RaspGraphReaderTest {

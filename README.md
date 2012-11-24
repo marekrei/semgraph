@@ -3,9 +3,9 @@ SemGraph
 
 Author:		Marek Rei (marek@marekrei.com)
 
-Version:	0.2
+Version:	0.3
 
-Updated:	2012-06-21
+Updated:	2012-11-19
 
 Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
@@ -103,20 +103,20 @@ Here is some example code for reading in graphs from the input file, printing ou
 
 You can run the  GraphVisualiser directly from the jar file:
 
-	GraphVisualiser <inputtype> <inputpath>
+	VisualiseGraphs <inputtype> <inputpath>
 
 For example:
 
-	java -cp semgraph.jar:lib/prefuse.jar sem.graphvis.GraphVisualiser raspxml examples/raspxml/file1.xml
+	java -cp semgraph.jar:lib/prefuse.jar sem.run.VisualiseGraphs raspxml examples/raspxml/file1.xml
 
 
 You can also convert some graphs to LaTeX format using the jar:
 
-	ConvertGraphToTex <inputtype> <inputpath> <outputpath>
+	ConvertGraphs <inputtype> <inputpath> <outputtype> <outputpath>
 
 For example:
 
-	java -cp semgraph.jar sem.examples.ConvertGraphToTex raspxml examples/raspxml/file1.xml test.tex
+	java -cp semgraph.jar sem.run.ConvertGraphs raspxml examples/raspxml/file1.xml tikzdependency example.tex
 
 
 Dependencies
@@ -128,12 +128,16 @@ The JUnit library needs to be included for the unit tests: <http://junit.sourcef
 
 Tikz-dependency library is needed to convert the LaTeX representation to pdf: <http://sourceforge.net/projects/tikz-dependency/>
 
-Tikz is needed to run tikz-dependency: http://www.texample.net/tikz/
+Tikz is needed to run tikz-dependency: <http://www.texample.net/tikz/>
 
 You might have tikz already installed on your system. But if you get weird errors, try updating it. The tikz-dependency documentation describes how to install both of the libraries.
 
 Changes
 -------
+
+**0.3**
+* Added GraphReaderType and GraphWriterType to handle different formats
+* Several small code modifications
 
 **0.2**
 * Added support for writing graphs in LaTeX, using the tikz-dependency library.
@@ -149,3 +153,5 @@ License
 This software is distributed under the GNU Affero General Public License version 3. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The authors are not responsible for how it performs (or doesn't). See the GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+If you wish to use this software under a different license, feel free to contact me.

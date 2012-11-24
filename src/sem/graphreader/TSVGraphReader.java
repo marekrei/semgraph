@@ -2,6 +2,7 @@ package sem.graphreader;
 
 import java.util.ArrayList;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
@@ -173,8 +174,14 @@ public class TSVGraphReader implements GraphReader{
 			nextGraphPointer++;
 		}
 		if(this.nextSentence == null || !getAllParses || nextGraphPointer >= this.nextSentence.size()){
-			this.nextSentence = readSentence();
 			nextGraphPointer = 0;
+			try{
+				this.nextSentence = readSentence();
+			} catch (GraphFormatException e){
+				this.nextSentence = new ArrayList<Graph>();
+				this.nextSentence.add(new Graph());
+				throw e;
+			}
 		}
 		return graph;
 	}

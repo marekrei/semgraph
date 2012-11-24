@@ -1,2 +1,4 @@
-semgraph-*.jar
+/bin/
+/build/
+/semgraph-*.jar
 

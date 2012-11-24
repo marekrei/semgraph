@@ -2,7 +2,7 @@ package sem.test.graphreader;
 
 import org.junit.Test;
 
-import sem.graphreader.GraphFormatException;
+import sem.exception.GraphFormatException;
 import sem.graphreader.TSVGraphReader;
 
 public class TSVGraphReaderTest {

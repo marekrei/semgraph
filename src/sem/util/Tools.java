@@ -246,7 +246,9 @@ public class Tools {
     		c += (val2 - mean2)*(val2 - mean2);
     	}
     	
-    	return a / (Math.sqrt(b) * Math.sqrt(c));
+    	if(b == 0.0 || c == 0.0)
+    		return 0.0;
+    	return a / (Math.sqrt(b * c));
     }
     
     /**
@@ -341,7 +343,7 @@ public class Tools {
     public static String join(List<String> pieces, String delimiter){
     	String result = "";
     	for(int i = 0; i < pieces.size(); i++){
-    		result += pieces.get(1);
+    		result += pieces.get(i);
     		if(i+1 < pieces.size())
     			result += delimiter;
     	}

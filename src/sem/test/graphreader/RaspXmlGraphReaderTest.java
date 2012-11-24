@@ -8,10 +8,10 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Edge;
 import sem.graph.Graph;
 import sem.graph.Node;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.GraphReader;
 import sem.graphreader.RaspXmlGraphReader;
 

@@ -2,15 +2,18 @@ package sem.examples;
 
 import java.util.ArrayList;
 
-import sem.graph.Edge;
+import sem.exception.GraphFormatException;
 import sem.graph.Graph;
-import sem.graph.Node;
-import sem.graphreader.GraphFormatException;
 import sem.graphreader.GraphReader;
 import sem.graphreader.RaspXmlGraphReader;
 import sem.graphvis.GraphVisualiser;
 
-public class ReadAndVisualise {
+/**
+ * Example class.
+ * Shows how to read graphs from a file and display them in the visualiser.
+ *
+ */
+public class VisualiseGraphs {
 	public static void main(String[] agrs){
 		try {
 			// Open the reader
@@ -23,16 +26,6 @@ public class ReadAndVisualise {
 			while(reader.hasNext()){ 
 			    Graph graph = reader.next();
 			    graphs.add(graph);
-			    
-			    // Iterate over nodes
-			    for(Node node : graph.getNodes()) 
-			        System.out.println("NODE: " + node.getLemma() + " " + node.getPos());
-			    
-			    // Iterate over edges
-			    for(Edge edge : graph.getEdges()) 
-			        System.out.println("EDGE: " + edge.getLabel() + " " + edge.getHead().getLemma() + " " + edge.getDep().getLemma());
-			   
-			    System.out.println();
 			}
 			
 			// Close the reader

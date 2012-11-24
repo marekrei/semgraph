@@ -2,6 +2,7 @@ package sem.graphreader;
 
 import java.util.ArrayList;
 
+import sem.exception.GraphFormatException;
 import sem.graph.Graph;
 
 /**

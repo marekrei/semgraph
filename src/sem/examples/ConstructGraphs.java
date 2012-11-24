@@ -9,7 +9,7 @@ import sem.graph.Node;
  * Shows how to construct a graph with nodes and edges.
  *
  */
-public class ConstructGraph {
+public class ConstructGraphs {
 	public static void main(String[] args) {
 		Graph graph = new Graph();
 		
