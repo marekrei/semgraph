@@ -144,7 +144,7 @@ Changes
 * Added the option to specify how nodes are created in the RaspXmlGraphReader (either based on lemmas or tokens).
 
 **0.1**
-* Initial release
+* Initial release 
 
 
 License
