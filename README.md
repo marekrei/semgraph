@@ -136,14 +136,17 @@ Changes
 -------
 
 **0.3**
+
 * Added GraphReaderType and GraphWriterType to handle different formats
 * Several small code modifications
 
 **0.2**
+
 * Added support for writing graphs in LaTeX, using the tikz-dependency library.
 * Added the option to specify how nodes are created in the RaspXmlGraphReader (either based on lemmas or tokens).
 
 **0.1**
+
 * Initial release 
 
 
