@@ -11,7 +11,7 @@ Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
 Download:	<https://github.com/marekrei/semgraph>
 
-Documentation:	<http://www.marekrei.com/doc/semgraph/>
+Documentation:	<http://www.marekrei.com/doc/semgraph/0.3/>
 
 About
 -----
