@@ -51,6 +51,7 @@ public class RaspXmlGraphReader implements GraphReader{
 	private String ellipLemma = "ellip";
 	private ArrayList<String> domPath;
 	private int nodeSelectionMode;
+	private String part;
 	
 	/**
 	 * The nodes list will contain all the lemmas given by RASP, including the cases where two lemmas correspond to the same token.
@@ -78,6 +79,7 @@ public class RaspXmlGraphReader implements GraphReader{
 		this.xmlReader = new XmlReader(inputPath);
 		this.domPath = new ArrayList<String>();
 		this.nodeSelectionMode = nodeSelectionMode;
+		this.part = null;
 		this.reset();
 	}
 	
@@ -298,6 +300,9 @@ public class RaspXmlGraphReader implements GraphReader{
 						grWeightsPart = "";
 					}
 				}
+				else if(tag.equals("part")){
+					part = xmlReader.getAttributeValue(null, "n");
+				}
 				
 				else if(tag.equals("xparse"))
 					xparse = true;
@@ -336,6 +341,7 @@ public class RaspXmlGraphReader implements GraphReader{
 				g.putMetadata("sentenceId", ""+sentenceCount);
 				g.putMetadata("weightedGrs", grWeights.trim());
 				g.putMetadata("xparse", xparse?"true":"false");
+				g.putMetadata("part", part);
 			}
 		}
 
