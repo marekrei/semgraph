@@ -9,7 +9,9 @@ Updated:	2012-11-24
 
 Homepage:	<http://www.marekrei.com/projects/semgraph/>
 
-Download:	<https://github.com/marekrei/semgraph>
+Source code:	<https://github.com/marekrei/semgraph>
+
+Download JAR:	<http://www.marekrei.com/files/build/semgraph-0.3.jar>
 
 Documentation:	<http://www.marekrei.com/doc/semgraph/0.3/>
 
